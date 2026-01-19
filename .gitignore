@@ -1,0 +1,26 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Python
+pythonScripts/__pycache__/
+pythonScripts/.venv/
+pythonScripts/venv/
+pythonScripts/*.pyc
+pythonScripts/.ipynb_checkpoints/
+pythonScripts/*.jpg
+pythonScripts/*.png
+.pytest_cache/
+.vscode/python_analysis_cache/
