@@ -1,0 +1,221 @@
+# config/languages.py
+
+# Słownik tłumaczeń i poziomów ryzyka
+# Risk: 0 = Zielony (OK), 1 = Żółty (Uwaga), 2 = Czerwony (Lekarz!)
+
+DISEASE_INFO = {
+    'Actinic keratoses': {
+        'pl': 'Rogowacenie słoneczne',
+        'en': 'Actinic Keratoses',
+        'desc_pl': 'Częsta zmiana skórna wywołana słońcem. Może przekształcić się w raka.',
+        'risk': 1
+    },
+    'Basal cell carcinoma': {
+        'pl': 'Rak podstawnokomórkowy',
+        'en': 'Basal Cell Carcinoma',
+        'desc_pl': 'Najczęstszy nowotwór złośliwy skóry. Rośnie powoli, rzadko daje przerzuty.',
+        'risk': 2
+    },
+    'Benign keratosis-like lesions': {
+        'pl': 'Łagodne zmiany rogowaciejące',
+        'en': 'Benign Keratosis',
+        'desc_pl': 'Zmiany starcze, brodawki łojotokowe. Zazwyczaj niegroźne.',
+        'risk': 0
+    },
+    'Chickenpox': {
+        'pl': 'Ospa wietrzna',
+        'en': 'Chickenpox',
+        'desc_pl': 'Choroba zakaźna (wirusowa).',
+        'risk': 1
+    },
+    'Cowpox': {
+        'pl': 'Ospa krowia',
+        'en': 'Cowpox',
+        'desc_pl': 'Rzadka choroba wirusowa.',
+        'risk': 1
+    },
+    'Dermatofibroma': {
+        'pl': 'Włókniak skóry',
+        'en': 'Dermatofibroma',
+        'desc_pl': 'Twardy, łagodny guzek pod skórą. Niegroźny.',
+        'risk': 0
+    },
+    'Healthy': {
+        'pl': 'Zdrowa skóra',
+        'en': 'Healthy Skin',
+        'desc_pl': 'Nie wykryto niepokojących zmian.',
+        'risk': 0
+    },
+    'HFMD': {
+        'pl': 'Choroba dłoni, stóp i jamy ustnej',
+        'en': 'HFMD',
+        'desc_pl': 'Choroba wirusowa (Bostonka).',
+        'risk': 1
+    },
+    'Measles': {
+        'pl': 'Odra',
+        'en': 'Measles',
+        'desc_pl': 'Wysoce zakaźna choroba wirusowa.',
+        'risk': 1
+    },
+    'Melanocytic nevi': {
+        'pl': 'Znamię melanocytowe (Pieprzyk)',
+        'en': 'Melanocytic Nevi (Mole)',
+        'desc_pl': 'Typowy pieprzyk. Zazwyczaj łagodny, ale warto obserwować zmiany.',
+        'risk': 0
+    },
+    'Melanoma': {
+        'pl': 'Czerniak',
+        'en': 'Melanoma',
+        'desc_pl': 'Najgroźniejszy nowotwór skóry. Wymaga pilnej wizyty u onkologa!',
+        'risk': 2
+    },
+    'Monkeypox': {
+        'pl': 'Ospa małpia',
+        'en': 'Monkeypox',
+        'desc_pl': 'Choroba wirusowa odzwierzęca.',
+        'risk': 1
+    },
+    'Squamous cell carcinoma': {
+        'pl': 'Rak kolczystokomórkowy',
+        'en': 'Squamous Cell Carcinoma',
+        'desc_pl': 'Nowotwór złośliwy skóry. Wymaga leczenia.',
+        'risk': 2
+    },
+    'Vascular lesions': {
+        'pl': 'Zmiany naczyniowe',
+        'en': 'Vascular Lesions',
+        'desc_pl': 'Naczyniaki, pajączki. Zazwyczaj łagodne.',
+        'risk': 0
+    }
+}
+
+UI_TEXT = {
+    'pl': {
+        'title': 'System Diagnostyczny',
+        'upload': 'Wgraj zdjęcie',
+        'camera': 'Uruchom aparat',
+        'analyze': 'Analizuj',
+        'results': 'Wyniki Analizy',
+        'history': 'Historia Badań',
+        'settings': 'Ustawienia',
+        'risk_0': 'Zmiana Łagodna (Niskie ryzyko)',
+        'risk_1': 'Zmiana do obserwacji (Średnie ryzyko)',
+        'risk_2': 'Wysokie ryzyko - Skonsultuj z lekarzem!',
+        'confidence': 'Pewność modelu',
+        'save_hist': 'Zapisano w historii',
+        'language': 'Język',
+        'model_select': 'Wybierz model',
+        'device_mode': 'Tryb pracy',
+        'crop_image': 'Korekta obrazu',
+        'crop_image_slider': 'Przytnij brzegi (Zoom)',
+        'analyzing': 'AI analizuje obraz...',
+        'input_image': 'Obraz wejściowy',
+        'ai_heatmap': 'AI Heatmap (Grad-CAM)',
+        'ai_diagnosis': 'Diagnoza AI',
+        'healthy_detected': 'Wykryto: Zdrowa skóra ✅',
+        'disease_detected': 'Wykryto zmianę chorobową. Skonsultuj z lekarzem.',
+        'image_sent': 'Zdjęcie wysłane na komputer! Spójrz na ekran laptopa.',
+        'image_received': 'Odebrano nowe zdjęcie!',
+        'time': 'Czas',
+        'file_not_loaded': 'Nie udało się wczytać pliku po 5 próbach. Szczegóły błędu:',
+        'try_again': 'Spróbuj zrobić zdjęcie ponownie.',
+        'no_image_in_buffer': 'Brak zdjęcia w buforze. Użyj telefonu w trybie "Telefon" aby wysłać zdjęcie.',
+        'pc_local': 'PC (Analiza lokalna)',
+        'phone_remote': 'Telefon (Kamera zdalna)',
+        'pc_remote': 'PC (Monitor zdalny)',
+        'device_mode_help': 'Użyj "Telefon" żeby zrobić zdjęcie, a "Monitor" na laptopie żeby je odebrać.',
+        'refresh_manually': 'Odśwież ręcznie',
+        'pc_remote_info': 'Oczekiwanie na zdjęcie z telefonu... (Tryb Live)',
+        'phone_remote_info': 'Zrób zdjęcie zmiany skórnej. Pojawi się ono automatycznie na ekranie komputera.',
+        'pc_local_info': 'Wgraj zdjęcie (JPG/PNG)',
+        'phone_remote_info': 'Zrób zdjęcie zmiany skórnej. Pojawi się ono automatycznie na ekranie komputera.',
+        'pc_remote_info': 'Oczekiwanie na zdjęcie z telefonu... (Tryb Live)',
+        'refresh_manually': 'Odśwież ręcznie',
+        'device_mode_help': 'Użyj "Telefon" żeby zrobić zdjęcie, a "Monitor" na laptopie żeby je odebrać.',
+        'pc_remote': 'PC (Monitor zdalny)',
+        'phone_remote': 'Telefon (Kamera zdalna)',
+        'pc_local': 'PC (Analiza lokalna)',
+        'try_again': 'Spróbuj zrobić zdjęcie ponownie.',
+        'no_image_in_buffer': 'Brak zdjęcia w buforze. Użyj telefonu w trybie "Telefon" aby wysłać zdjęcie.',
+        'image_received': 'Odebrano nowe zdjęcie!',
+        'time': 'Czas',
+        'file_not_loaded': 'Nie udało się wczytać pliku po 5 próbach. Szczegóły błędu:',
+        'image_sent': 'Zdjęcie wysłane na komputer! Spójrz na ekran laptopa.',
+        'healthy_detected': 'Wykryto: Zdrowa skóra ✅',
+        'disease_detected': 'Wykryto zmianę chorobową. Skonsultuj z lekarzem.',
+        'input_image': 'Obraz wejściowy',
+        'ai_heatmap': 'AI Heatmap (Grad-CAM)',
+        'ai_diagnosis': 'Diagnoza AI',
+        'model_select': 'Wybierz model',
+        'language': 'Język',
+        'download_image': '📥 Pobierz Obraz',
+        'download_heatmap': '📥 Pobierz Heatmap',
+        'manage_history': 'Zarządzaj Historią',
+        'select_entry_to_delete': 'Wybierz wpis do usunięcia',
+        'delete_entry': '🗑️ Usuń Wpis',
+        'entry_deleted': 'Wpis został usunięty',
+        'delete_failed': 'Nie udało się usunąć wpisu',
+        'saved_images': 'Zapisane Obrazy',
+        'no_history_entries': 'Brak wpisów w historii.',
+        'table_date': 'Data',
+        'table_diagnosis': 'Diagnoza',
+        'table_confidence': 'Pewność',
+        'table_risk': 'Ryzyko',
+    },
+    'en': {
+        'title': 'Diagnostic System',
+        'upload': 'Upload Image',
+        'camera': 'Start Camera',
+        'analyze': 'Analyze',
+        'results': 'Analysis Results',
+        'history': 'Exam History',
+        'settings': 'Settings',
+        'risk_0': 'Benign (Low Risk)',
+        'risk_1': 'Observe (Medium Risk)',
+        'risk_2': 'High Risk - Consult Doctor!',
+        'confidence': 'Confidence',
+        'save_hist': 'Saved to history',
+        'language': 'Language',
+        'model_select': 'Select Model',
+        'device_mode': 'Device Mode',
+        'crop_image': 'Crop Image',
+        'crop_image_slider': 'Crop Image Slider',
+        'analyzing': 'Analyzing...',
+        'input_image': 'Input Image',
+        'ai_heatmap': 'AI Heatmap (Grad-CAM)',
+        'ai_diagnosis': 'AI Diagnosis',
+        'healthy_detected': 'Healthy Detected',
+        'disease_detected': 'Disease Detected',
+        'image_sent': 'Image Sent',
+        'image_received': 'Image Received',
+        'time': 'Time',
+        'file_not_loaded': 'Failed to load file after 5 attempts. Error details:',
+        'try_again': 'Try again.',
+        'no_image_in_buffer': 'No image in buffer. Use the "Phone" mode to send the image.',
+        'pc_local': 'PC (Local Analysis)',
+        'phone_remote': 'Phone (Remote Camera)',
+        'pc_remote': 'PC (Remote Monitor)',
+        'refresh_manually': 'Refresh Manually',
+        'phone_remote_info': 'Take a picture of the skin lesion. It will automatically appear on the computer screen.',
+        'pc_remote_info': 'Waiting for image from phone... (Live Mode)',
+        'refresh_manually': 'Refresh Manually',
+        'device_mode_help': 'Use "Phone" to take a picture, and "Monitor" on the laptop to receive it.',
+        'risk_1': 'Observe (Medium Risk)',
+        'risk_2': 'High Risk - Consult Doctor!',
+        'download_image': '📥 Download Image',
+        'download_heatmap': '📥 Download Heatmap',
+        'manage_history': 'Manage History',
+        'select_entry_to_delete': 'Select entry to delete',
+        'delete_entry': '🗑️ Delete Entry',
+        'entry_deleted': 'Entry deleted successfully',
+        'delete_failed': 'Failed to delete entry',
+        'saved_images': 'Saved Images',
+        'no_history_entries': 'No history entries.',
+        'table_date': 'Date',
+        'table_diagnosis': 'Diagnosis',
+        'table_confidence': 'Confidence',
+        'table_risk': 'Risk',
+
+    }
+}

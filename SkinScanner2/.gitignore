@@ -1,0 +1,61 @@
+### --- Środowisko wirtualne (VENV) ---
+# Ignorujemy foldery venv widoczne na Twoim screenie
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
+share/
+# Standardowe nazwy venv
+venv/
+.venv/
+env/
+
+### --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+### --- Dane i Wyniki (Projekt SkinScanner) ---
+# Ignorujemy historię przesłanych zdjęć i logi (prywatność pacjenta!)
+history_images/
+history.csv
+shared_buffer/
+
+# Modele (ciężkie pliki wag sieci neuronowych)
+# Jeśli chcesz trzymać strukturę folderu, ale bez plików wag:
+models/*.h5
+models/*.pth
+models/*.onnx
+models/*.pb
+# Jeśli Twoje modele ważą powyżej 100MB, GitHub ich nie przyjmie bez LFS
+
+### --- Pliki edytorów i systemowe ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+### --- Pliki tymczasowe pisania pracy (widoczne na screenie) ---
+# Blokujemy pliki "lock" z Worda/LibreOffice
+.~lock.*
+~$*.docx
