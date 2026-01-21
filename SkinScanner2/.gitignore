@@ -54,8 +54,3 @@ models/*.pb
 .DS_Store
 Thumbs.db
 desktop.ini
-
-### --- Pliki tymczasowe pisania pracy (widoczne na screenie) ---
-# Blokujemy pliki "lock" z Worda/LibreOffice
-.~lock.*
-~$*.docx
