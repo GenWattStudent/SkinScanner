@@ -25,6 +25,14 @@ export async function fetchHistoryEntry(id: number): Promise<HistoryEntry> {
   return data
 }
 
+export function useHistoryEntry(id: number | null) {
+  return useQuery({
+    queryKey: ['history-entry', id],
+    queryFn: () => fetchHistoryEntry(id!),
+    enabled: id !== null,
+  })
+}
+
 // ── Delete ────────────────────────────────────────────────────────────────────
 
 export async function deleteHistoryEntry(id: number): Promise<void> {

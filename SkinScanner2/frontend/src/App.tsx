@@ -6,6 +6,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 const ScannerPage = lazy(() => import('@/pages/ScannerPage'))
 const HistoryPage = lazy(() => import('@/pages/HistoryPage'))
 const LiveCameraPage = lazy(() => import('@/pages/LiveCameraPage'))
+const BodyMapPage = lazy(() => import('@/pages/BodyMapPage'))
 const InfoPage = lazy(() => import('@/pages/InfoPage'))
 
 function PageFallback() {
@@ -43,6 +44,14 @@ export default function App() {
           element={
             <Suspense fallback={<PageFallback />}>
               <LiveCameraPage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/bodymap"
+          element={
+            <Suspense fallback={<PageFallback />}>
+              <BodyMapPage />
             </Suspense>
           }
         />

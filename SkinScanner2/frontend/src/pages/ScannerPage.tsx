@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { Button } from '@/components/ui/button'
-import { Loader2, ScanLine } from 'lucide-react'
+import { Loader2, ScanLine, ScanSearch } from 'lucide-react'
 import { ImageUpload } from '@/components/scanner/ImageUpload'
 import { CameraCapture } from '@/components/scanner/CameraCapture'
 import { ImageCropper } from '@/components/scanner/ImageCropper'
@@ -17,6 +17,7 @@ export default function ScannerPage() {
   const [croppedFile, setCroppedFile] = useState<File | null>(null)
   const [croppedPreview, setCroppedPreview] = useState<string | null>(null)
   const [showCropper, setShowCropper] = useState(false)
+  const [autoFocus, setAutoFocus] = useState(false)
   const [result, setResult] = useState<AnalyzeResponse | null>(null)
 
   const { mutate, isPending } = useAnalyzeMutation()
@@ -27,6 +28,7 @@ export default function ScannerPage() {
     setOriginalPreview(url)
     setCroppedFile(null)
     setCroppedPreview(null)
+    setAutoFocus(false)
     setResult(null)
     setShowCropper(true) // Show cropper after selection
   }, [])
@@ -51,6 +53,7 @@ export default function ScannerPage() {
     setOriginalPreview(null)
     setCroppedFile(null)
     setCroppedPreview(null)
+    setAutoFocus(false)
     setResult(null)
     setShowCropper(false)
   }, [])
@@ -65,7 +68,7 @@ export default function ScannerPage() {
     if (!fileToAnalyze) return
     // crop_factor = 0 because cropping already done on frontend
     mutate(
-      { file: fileToAnalyze, crop_factor: 0 },
+      { file: fileToAnalyze, crop_factor: 0, auto_focus: autoFocus },
       { onSuccess: (data) => setResult(data) },
     )
   }
@@ -114,6 +117,35 @@ export default function ScannerPage() {
         <div className="space-y-4">
           <div className="overflow-hidden rounded-xl border border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-900">
             <img src={croppedPreview} alt="preview" className="w-full max-h-96 object-contain" />
+          </div>
+
+          {/* Clear & Zoom toggle with hint */}
+          <div
+            className={`flex items-center justify-between rounded-lg border px-4 py-2.5 transition-colors cursor-pointer select-none ${
+              autoFocus
+                ? 'border-blue-500 bg-blue-50 dark:bg-blue-950/40'
+                : 'border-slate-200 dark:border-slate-700'
+            }`}
+            onClick={() => setAutoFocus((v) => !v)}
+            role="button"
+            aria-pressed={autoFocus}
+          >
+            <div className="flex items-center gap-2">
+              <ScanSearch className={`h-5 w-5 ${autoFocus ? 'text-blue-500' : 'text-slate-400'}`} />
+              <div>
+                <p className={`text-sm font-medium ${autoFocus ? 'text-blue-600 dark:text-blue-400' : ''}`}>
+                  {t('clearAndZoom')}
+                </p>
+                <p className="text-xs text-slate-500">{t('clearAndZoomHint')}</p>
+              </div>
+            </div>
+            <div className={`h-5 w-9 rounded-full transition-colors ${
+              autoFocus ? 'bg-blue-500' : 'bg-slate-300 dark:bg-slate-600'
+            }`}>
+              <div className={`mt-0.5 h-4 w-4 rounded-full bg-white shadow transition-transform ${
+                autoFocus ? 'translate-x-4.5 ml-0.5' : 'ml-0.5'
+              }`} />
+            </div>
           </div>
 
           <div className="flex gap-2">

@@ -319,3 +319,356 @@
 2026-02-18 21:59:33 | INFO     | app.main:54 – API ready  🩺
 2026-02-18 21:59:33 | INFO     | app.main:55 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 2026-02-18 22:00:04 | INFO     | app.services.analyze_service:215 – scan_id=1 | consensus=Melanoma (76.8%) | risk=2 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 18:52:23 | INFO     | app.main:42 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 18:52:23 | INFO     | app.main:43 – Device : cuda
+2026-02-19 18:52:23 | INFO     | app.main:44 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 18:52:23 | INFO     | app.main:45 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 18:52:23 | INFO     | app.main:48 – Database tables ready
+2026-02-19 18:52:23 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 18:52:24 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 18:52:25 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 18:52:26 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 18:52:26 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 18:52:26 | INFO     | app.main:54 – API ready  🩺
+2026-02-19 18:52:26 | INFO     | app.main:55 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 18:54:08 | INFO     | app.services.analyze_service:215 – scan_id=2 | consensus=Melanoma (69.2%) | risk=2 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 18:58:54 | INFO     | app.main:60 – SkinScanner API shutting down
+2026-02-19 18:59:07 | INFO     | app.main:42 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 18:59:07 | INFO     | app.main:43 – Device : cuda
+2026-02-19 18:59:07 | INFO     | app.main:44 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 18:59:07 | INFO     | app.main:45 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 18:59:07 | INFO     | app.main:48 – Database tables ready
+2026-02-19 18:59:07 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 18:59:08 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 18:59:08 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 18:59:10 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 18:59:10 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 18:59:10 | INFO     | app.main:54 – API ready  🩺
+2026-02-19 18:59:10 | INFO     | app.main:55 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 18:59:10 | INFO     | app.main:60 – SkinScanner API shutting down
+2026-02-19 18:59:22 | INFO     | app.main:42 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 18:59:22 | INFO     | app.main:43 – Device : cuda
+2026-02-19 18:59:22 | INFO     | app.main:44 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 18:59:22 | INFO     | app.main:45 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 18:59:22 | INFO     | app.main:48 – Database tables ready
+2026-02-19 18:59:22 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 18:59:23 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 18:59:23 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 18:59:24 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 18:59:24 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 18:59:24 | INFO     | app.main:54 – API ready  🩺
+2026-02-19 18:59:24 | INFO     | app.main:55 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 18:59:25 | INFO     | app.main:60 – SkinScanner API shutting down
+2026-02-19 18:59:37 | INFO     | app.main:42 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 18:59:37 | INFO     | app.main:43 – Device : cuda
+2026-02-19 18:59:37 | INFO     | app.main:44 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 18:59:37 | INFO     | app.main:45 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 18:59:37 | INFO     | app.main:48 – Database tables ready
+2026-02-19 18:59:37 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 18:59:38 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 18:59:38 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 18:59:40 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 18:59:40 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 18:59:40 | INFO     | app.main:54 – API ready  🩺
+2026-02-19 18:59:40 | INFO     | app.main:55 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 18:59:40 | INFO     | app.main:60 – SkinScanner API shutting down
+2026-02-19 18:59:52 | INFO     | app.main:42 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 18:59:52 | INFO     | app.main:43 – Device : cuda
+2026-02-19 18:59:52 | INFO     | app.main:44 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 18:59:52 | INFO     | app.main:45 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 18:59:52 | INFO     | app.main:48 – Database tables ready
+2026-02-19 18:59:53 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 18:59:53 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 18:59:54 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 18:59:55 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 18:59:55 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 18:59:55 | INFO     | app.main:54 – API ready  🩺
+2026-02-19 18:59:55 | INFO     | app.main:55 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 18:59:55 | INFO     | app.main:60 – SkinScanner API shutting down
+2026-02-19 19:00:09 | INFO     | app.main:42 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:00:09 | INFO     | app.main:43 – Device : cuda
+2026-02-19 19:00:09 | INFO     | app.main:44 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 19:00:09 | INFO     | app.main:45 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 19:00:09 | INFO     | app.main:48 – Database tables ready
+2026-02-19 19:00:10 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 19:00:10 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 19:00:11 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 19:00:12 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 19:00:12 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 19:00:12 | INFO     | app.main:54 – API ready  🩺
+2026-02-19 19:00:12 | INFO     | app.main:55 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:00:12 | INFO     | app.main:60 – SkinScanner API shutting down
+2026-02-19 19:00:30 | INFO     | app.main:42 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:00:30 | INFO     | app.main:43 – Device : cuda
+2026-02-19 19:00:30 | INFO     | app.main:44 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 19:00:30 | INFO     | app.main:45 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 19:00:30 | INFO     | app.main:48 – Database tables ready
+2026-02-19 19:00:30 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 19:00:31 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 19:00:31 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 19:00:32 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 19:00:32 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 19:00:32 | INFO     | app.main:54 – API ready  🩺
+2026-02-19 19:00:32 | INFO     | app.main:55 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:00:33 | INFO     | app.main:60 – SkinScanner API shutting down
+2026-02-19 19:00:44 | INFO     | app.main:44 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:00:44 | INFO     | app.main:45 – Device : cuda
+2026-02-19 19:00:44 | INFO     | app.main:46 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 19:00:44 | INFO     | app.main:47 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 19:00:44 | INFO     | app.main:50 – Database tables ready
+2026-02-19 19:00:45 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 19:00:45 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 19:00:46 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 19:00:47 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 19:00:47 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 19:00:47 | INFO     | app.main:56 – API ready  🩺
+2026-02-19 19:00:47 | INFO     | app.main:57 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:03:35 | INFO     | app.main:62 – SkinScanner API shutting down
+2026-02-19 19:03:48 | INFO     | app.main:44 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:03:48 | INFO     | app.main:45 – Device : cuda
+2026-02-19 19:03:48 | INFO     | app.main:46 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 19:03:48 | INFO     | app.main:47 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 19:03:48 | INFO     | app.main:50 – Database tables ready
+2026-02-19 19:03:48 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 19:03:49 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 19:03:50 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 19:03:51 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 19:03:51 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 19:03:51 | INFO     | app.main:56 – API ready  🩺
+2026-02-19 19:03:51 | INFO     | app.main:57 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:04:03 | INFO     | app.services.bodymap_service:47 – Created body-map marker id=1 view=front
+2026-02-19 19:04:04 | INFO     | app.services.bodymap_service:47 – Created body-map marker id=2 view=front
+2026-02-19 19:04:05 | INFO     | app.services.bodymap_service:47 – Created body-map marker id=3 view=front
+2026-02-19 19:04:05 | INFO     | app.services.bodymap_service:47 – Created body-map marker id=4 view=front
+2026-02-19 19:05:26 | INFO     | app.services.bodymap_service:47 – Created body-map marker id=5 view=front
+2026-02-19 19:05:27 | INFO     | app.services.bodymap_service:47 – Created body-map marker id=6 view=front
+2026-02-19 19:06:04 | INFO     | app.services.bodymap_service:70 – Deleted body-map marker id=6
+2026-02-19 19:06:08 | INFO     | app.services.bodymap_service:70 – Deleted body-map marker id=1
+2026-02-19 19:06:11 | INFO     | app.services.bodymap_service:70 – Deleted body-map marker id=2
+2026-02-19 19:06:12 | INFO     | app.services.bodymap_service:47 – Created body-map marker id=6 view=front
+2026-02-19 19:06:15 | INFO     | app.services.bodymap_service:70 – Deleted body-map marker id=3
+2026-02-19 19:06:16 | INFO     | app.services.bodymap_service:47 – Created body-map marker id=7 view=front
+2026-02-19 19:06:22 | INFO     | app.services.bodymap_service:70 – Deleted body-map marker id=7
+2026-02-19 19:06:27 | INFO     | app.services.bodymap_service:70 – Deleted body-map marker id=6
+2026-02-19 19:06:30 | INFO     | app.services.bodymap_service:70 – Deleted body-map marker id=4
+2026-02-19 19:06:33 | INFO     | app.services.bodymap_service:70 – Deleted body-map marker id=5
+2026-02-19 19:14:39 | INFO     | app.services.bodymap_service:47 – Created body-map marker id=1 view=front
+2026-02-19 19:14:49 | INFO     | app.services.bodymap_service:61 – Updated body-map marker id=1
+2026-02-19 19:14:56 | INFO     | app.services.bodymap_service:47 – Created body-map marker id=2 view=front
+2026-02-19 19:14:58 | INFO     | app.services.bodymap_service:61 – Updated body-map marker id=2
+2026-02-19 19:15:08 | INFO     | app.services.bodymap_service:61 – Updated body-map marker id=2
+2026-02-19 19:15:15 | INFO     | app.services.bodymap_service:61 – Updated body-map marker id=2
+2026-02-19 19:15:16 | INFO     | app.services.bodymap_service:61 – Updated body-map marker id=2
+2026-02-19 19:15:17 | INFO     | app.services.bodymap_service:61 – Updated body-map marker id=2
+2026-02-19 19:15:21 | INFO     | app.services.bodymap_service:61 – Updated body-map marker id=1
+2026-02-19 19:19:03 | INFO     | app.main:62 – SkinScanner API shutting down
+2026-02-19 19:19:33 | INFO     | app.main:44 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:19:33 | INFO     | app.main:45 – Device : cuda
+2026-02-19 19:19:33 | INFO     | app.main:46 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 19:19:33 | INFO     | app.main:47 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 19:19:33 | INFO     | app.main:50 – Database tables ready
+2026-02-19 19:19:33 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 19:19:34 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 19:19:34 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 19:19:36 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 19:19:36 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 19:19:36 | INFO     | app.main:56 – API ready  🩺
+2026-02-19 19:19:36 | INFO     | app.main:57 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:19:36 | INFO     | app.main:62 – SkinScanner API shutting down
+2026-02-19 19:19:48 | INFO     | app.main:44 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:19:48 | INFO     | app.main:45 – Device : cuda
+2026-02-19 19:19:48 | INFO     | app.main:46 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 19:19:48 | INFO     | app.main:47 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 19:19:48 | INFO     | app.main:50 – Database tables ready
+2026-02-19 19:19:49 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 19:19:49 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 19:19:50 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 19:19:51 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 19:19:51 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 19:19:51 | INFO     | app.main:56 – API ready  🩺
+2026-02-19 19:19:51 | INFO     | app.main:57 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:19:51 | INFO     | app.main:62 – SkinScanner API shutting down
+2026-02-19 19:20:08 | INFO     | app.main:44 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:20:08 | INFO     | app.main:45 – Device : cuda
+2026-02-19 19:20:08 | INFO     | app.main:46 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 19:20:08 | INFO     | app.main:47 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 19:20:08 | INFO     | app.main:50 – Database tables ready
+2026-02-19 19:20:08 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 19:20:09 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 19:20:09 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 19:20:11 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 19:20:11 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 19:20:11 | INFO     | app.main:56 – API ready  🩺
+2026-02-19 19:20:11 | INFO     | app.main:57 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:20:11 | INFO     | app.main:62 – SkinScanner API shutting down
+2026-02-19 19:20:25 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:20:25 | INFO     | app.main:47 – Device : cuda
+2026-02-19 19:20:25 | INFO     | app.main:48 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 19:20:25 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 19:20:25 | INFO     | app.main:52 – Database tables ready
+2026-02-19 19:20:26 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 19:20:26 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 19:20:27 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 19:20:28 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 19:20:28 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 19:20:28 | INFO     | app.main:58 – API ready  🩺
+2026-02-19 19:20:28 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:20:28 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-02-19 19:20:41 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:20:41 | INFO     | app.main:47 – Device : cuda
+2026-02-19 19:20:41 | INFO     | app.main:48 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 19:20:41 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 19:20:41 | INFO     | app.main:52 – Database tables ready
+2026-02-19 19:20:41 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 19:20:42 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 19:20:42 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 19:20:43 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 19:20:43 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 19:20:43 | INFO     | app.main:58 – API ready  🩺
+2026-02-19 19:20:43 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:20:44 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-02-19 19:20:55 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:20:55 | INFO     | app.main:47 – Device : cuda
+2026-02-19 19:20:55 | INFO     | app.main:48 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 19:20:55 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 19:20:55 | INFO     | app.main:52 – Database tables ready
+2026-02-19 19:20:55 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 19:20:56 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 19:20:56 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 19:20:58 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 19:20:58 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 19:20:58 | INFO     | app.main:58 – API ready  🩺
+2026-02-19 19:20:58 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:21:56 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-02-19 19:22:08 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:22:08 | INFO     | app.main:47 – Device : cuda
+2026-02-19 19:22:08 | INFO     | app.main:48 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 19:22:08 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 19:22:08 | INFO     | app.main:52 – Database tables ready
+2026-02-19 19:22:08 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 19:22:09 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 19:22:09 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 19:22:10 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 19:22:10 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 19:22:10 | INFO     | app.main:58 – API ready  🩺
+2026-02-19 19:22:10 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:26:18 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-02-19 19:26:38 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:26:38 | INFO     | app.main:47 – Device : cuda
+2026-02-19 19:26:38 | INFO     | app.main:48 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 19:26:38 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 19:26:38 | INFO     | app.main:52 – Database tables ready
+2026-02-19 19:26:39 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 19:26:40 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 19:26:40 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 19:26:42 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 19:26:42 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 19:26:42 | INFO     | app.main:58 – API ready  🩺
+2026-02-19 19:26:42 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:27:03 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-02-19 19:27:36 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:27:36 | INFO     | app.main:47 – Device : cuda
+2026-02-19 19:27:36 | INFO     | app.main:48 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 19:27:36 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 19:27:36 | INFO     | app.main:52 – Database tables ready
+2026-02-19 19:27:37 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 19:27:37 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 19:27:38 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 19:27:39 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 19:27:39 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 19:27:39 | INFO     | app.main:58 – API ready  🩺
+2026-02-19 19:27:39 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:28:07 | INFO     | app.services.patient_service:54 – Created patient id=1 name='lol'
+2026-02-19 19:32:26 | INFO     | app.services.analyze_service:215 – scan_id=1 | consensus=Melanocytic nevi (93.6%) | risk=0 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 19:33:02 | INFO     | app.services.analyze_service:215 – scan_id=2 | consensus=Melanocytic nevi (93.6%) | risk=0 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 19:33:22 | INFO     | app.services.bodymap_service:52 – Created body-map marker id=1 view=front
+2026-02-19 19:33:29 | INFO     | app.services.bodymap_service:66 – Updated body-map marker id=1
+2026-02-19 19:33:47 | INFO     | app.services.bodymap_service:66 – Updated body-map marker id=1
+2026-02-19 19:33:52 | INFO     | app.services.bodymap_service:66 – Updated body-map marker id=1
+2026-02-19 19:34:19 | INFO     | app.services.patient_service:54 – Created patient id=2 name='Trol'
+2026-02-19 19:34:32 | INFO     | app.services.analyze_service:215 – scan_id=3 | consensus=Melanocytic nevi (70.6%) | risk=0 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 19:34:50 | INFO     | app.services.analyze_service:215 – scan_id=4 | consensus=Melanocytic nevi (74.3%) | risk=0 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 19:35:13 | INFO     | app.services.bodymap_service:52 – Created body-map marker id=2 view=front
+2026-02-19 19:35:20 | INFO     | app.services.bodymap_service:75 – Deleted body-map marker id=2
+2026-02-19 19:35:23 | INFO     | app.services.bodymap_service:52 – Created body-map marker id=2 view=back
+2026-02-19 19:35:28 | INFO     | app.services.bodymap_service:66 – Updated body-map marker id=2
+2026-02-19 19:35:30 | INFO     | app.services.bodymap_service:66 – Updated body-map marker id=2
+2026-02-19 19:35:55 | INFO     | app.services.patient_service:68 – Updated patient id=2
+2026-02-19 19:35:58 | INFO     | app.services.bodymap_service:66 – Updated body-map marker id=2
+2026-02-19 19:36:26 | INFO     | app.services.bodymap_service:52 – Created body-map marker id=3 view=back
+2026-02-19 19:36:35 | INFO     | app.services.bodymap_service:75 – Deleted body-map marker id=3
+2026-02-19 19:37:02 | INFO     | app.services.bodymap_service:66 – Updated body-map marker id=1
+2026-02-19 19:43:21 | INFO     | app.services.history_service:100 – Deleted image: C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\history_images\9b3e33c0-bf36-4418-9499-b88418180172_original.png
+2026-02-19 19:43:21 | INFO     | app.services.history_service:108 – Deleted heatmap: C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\history_images\9b3e33c0-bf36-4418-9499-b88418180172_heatmap_mobilenet.png
+2026-02-19 19:43:21 | INFO     | app.services.history_service:108 – Deleted heatmap: C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\history_images\9b3e33c0-bf36-4418-9499-b88418180172_heatmap_resnet50.png
+2026-02-19 19:43:21 | INFO     | app.services.history_service:108 – Deleted heatmap: C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\history_images\9b3e33c0-bf36-4418-9499-b88418180172_heatmap_customcnn.png
+2026-02-19 19:43:21 | INFO     | app.services.history_service:108 – Deleted heatmap: C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\history_images\9b3e33c0-bf36-4418-9499-b88418180172_heatmap_vit.png
+2026-02-19 19:43:21 | INFO     | app.services.history_service:112 – Deleted history entry id=1
+2026-02-19 19:51:57 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-02-19 19:52:24 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:52:24 | INFO     | app.main:47 – Device : cuda
+2026-02-19 19:52:24 | INFO     | app.main:48 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 19:52:24 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 19:52:24 | INFO     | app.main:52 – Database tables ready
+2026-02-19 19:52:24 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 19:52:25 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 19:52:27 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 19:52:29 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 19:52:29 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 19:52:29 | INFO     | app.main:58 – API ready  🩺
+2026-02-19 19:52:29 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:53:39 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-02-19 19:53:57 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:53:57 | INFO     | app.main:47 – Device : cuda
+2026-02-19 19:53:57 | INFO     | app.main:48 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 19:53:57 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 19:53:57 | INFO     | app.main:52 – Database tables ready
+2026-02-19 19:53:58 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 19:53:59 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 19:53:59 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 19:54:02 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 19:54:02 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 19:54:02 | INFO     | app.main:58 – API ready  🩺
+2026-02-19 19:54:02 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:54:12 | INFO     | app.services.bodymap_service:52 – Created body-map marker id=3 view=back
+2026-02-19 19:54:15 | INFO     | app.services.bodymap_service:75 – Deleted body-map marker id=3
+2026-02-19 19:55:05 | INFO     | app.services.analyze_service:276 – scan_id=5 | consensus=Melanoma (82.2%) | risk=2 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 19:55:43 | INFO     | app.services.analyze_service:276 – scan_id=6 | consensus=Melanoma (82.2%) | risk=2 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 19:55:59 | INFO     | app.services.analyze_service:276 – scan_id=7 | consensus=Melanoma (73.8%) | risk=2 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 19:56:17 | INFO     | app.services.analyze_service:276 – scan_id=8 | consensus=Melanoma (73.0%) | risk=2 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 19:56:38 | INFO     | app.services.analyze_service:276 – scan_id=9 | consensus=Melanoma (78.3%) | risk=2 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 19:56:51 | INFO     | app.services.analyze_service:276 – scan_id=10 | consensus=Melanoma (80.7%) | risk=2 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 19:57:24 | INFO     | app.services.analyze_service:276 – scan_id=11 | consensus=Melanoma (78.3%) | risk=2 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 19:59:11 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-02-19 19:59:23 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 19:59:23 | INFO     | app.main:47 – Device : cuda
+2026-02-19 19:59:23 | INFO     | app.main:48 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 19:59:23 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 19:59:23 | INFO     | app.main:52 – Database tables ready
+2026-02-19 19:59:23 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 19:59:24 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 19:59:24 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 19:59:25 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 19:59:25 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 19:59:25 | INFO     | app.main:58 – API ready  🩺
+2026-02-19 19:59:25 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 20:05:19 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-02-19 20:05:33 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-02-19 20:05:33 | INFO     | app.main:47 – Device : cuda
+2026-02-19 20:05:33 | INFO     | app.main:48 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-02-19 20:05:33 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-02-19 20:05:33 | INFO     | app.main:52 – Database tables ready
+2026-02-19 20:05:33 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-02-19 20:05:34 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-02-19 20:05:34 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-02-19 20:05:36 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-02-19 20:05:36 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-02-19 20:05:36 | INFO     | app.main:58 – API ready  🩺
+2026-02-19 20:05:36 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-02-19 20:05:38 | INFO     | app.services.analyze_service:295 – scan_id=12 | consensus=Melanocytic nevi (64.1%) | risk=0 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 20:06:03 | INFO     | app.services.analyze_service:295 – scan_id=13 | consensus=Melanocytic nevi (64.1%) | risk=0 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 20:06:13 | INFO     | app.services.analyze_service:295 – scan_id=14 | consensus=Melanocytic nevi (64.1%) | risk=0 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 20:06:26 | INFO     | app.services.analyze_service:295 – scan_id=15 | consensus=Benign keratosis-like lesions (45.1%) | risk=0 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 20:09:24 | INFO     | app.services.analyze_service:295 – scan_id=16 | consensus=Melanocytic nevi (53.3%) | risk=0 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 20:12:05 | INFO     | app.services.analyze_service:295 – scan_id=17 | consensus=Melanocytic nevi (64.8%) | risk=0 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-02-19 20:19:16 | INFO     | app.main:64 – SkinScanner API shutting down

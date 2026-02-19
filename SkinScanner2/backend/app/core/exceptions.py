@@ -24,6 +24,18 @@ class HistoryEntryNotFoundError(Exception):
         super().__init__(f"History entry with id={entry_id} not found.")
 
 
+class MarkerNotFoundError(Exception):
+    def __init__(self, marker_id: int) -> None:
+        self.marker_id = marker_id
+        super().__init__(f"Body-map marker with id={marker_id} not found.")
+
+
+class PatientNotFoundError(Exception):
+    def __init__(self, patient_id: int) -> None:
+        self.patient_id = patient_id
+        super().__init__(f"Patient with id={patient_id} not found.")
+
+
 # ── FastAPI exception handlers ───────────────────────────────────────────────
 
 async def model_not_loaded_handler(
@@ -50,4 +62,22 @@ async def history_not_found_handler(
     return JSONResponse(
         status_code=404,
         content={"code": "HISTORY_ENTRY_NOT_FOUND", "message": str(exc)},
+    )
+
+
+async def marker_not_found_handler(
+    request: Request, exc: MarkerNotFoundError
+) -> JSONResponse:
+    return JSONResponse(
+        status_code=404,
+        content={"code": "MARKER_NOT_FOUND", "message": str(exc)},
+    )
+
+
+async def patient_not_found_handler(
+    request: Request, exc: PatientNotFoundError
+) -> JSONResponse:
+    return JSONResponse(
+        status_code=404,
+        content={"code": "PATIENT_NOT_FOUND", "message": str(exc)},
     )

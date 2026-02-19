@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { ScanLine, History, Video, Settings, Info } from 'lucide-react'
+import { ScanLine, History, Video, PersonStanding, Settings, Info } from 'lucide-react'
 import { useAppStore } from '@/store/useAppStore'
 import { cn } from '@/lib/utils'
 
@@ -13,6 +13,7 @@ const navItems: NavItem[] = [
   { to: '/', icon: <ScanLine className="h-5 w-5" />, labelKey: 'navScan' },
   { to: '/history', icon: <History className="h-5 w-5" />, labelKey: 'navHistory' },
   { to: '/live', icon: <Video className="h-5 w-5" />, labelKey: 'navLive' },
+  { to: '/bodymap', icon: <PersonStanding className="h-5 w-5" />, labelKey: 'navBodyMap' },
   { to: '/info', icon: <Info className="h-5 w-5" />, labelKey: 'navInfo' },
 ]
 

@@ -13,6 +13,7 @@ from collections import Counter
 from datetime import datetime
 from pathlib import Path
 
+import cv2
 import numpy as np
 import torch.nn as nn
 from loguru import logger
@@ -59,6 +60,82 @@ def _apply_crop(image: Image.Image, crop_factor: float) -> Image.Image:
     cx = int(w * crop_factor)
     cy = int(h * crop_factor)
     return image.crop((cx, cy, w - cx, h - cy))
+
+
+def _auto_focus_lesion(image: Image.Image) -> Image.Image:
+    """
+    Intelligently zoom into the dominant skin lesion by detecting its bounding
+    box and returning a clean rectangular crop — NO pixels are removed or masked.
+
+    Strategy:
+      1. Sample border pixels (10% margin on each side) as the background
+         colour reference in LAB space (perceptually uniform).
+      2. Compute per-pixel Euclidean distance from the background mean.
+      3. Threshold at the 65th percentile → pixels that "stand out" most.
+      4. Morphological close/open to build a solid saliency blob.
+      5. Take the largest contour (= dominant lesion) and crop to its bounding
+         box + 8% padding.  Fallback = original image if detection is poor.
+    """
+    rgb = np.array(image)
+    if rgb.size == 0:
+        return image
+
+    h, w = rgb.shape[:2]
+    if h < 32 or w < 32:
+        return image
+
+    # --- 1. Background colour from border pixels (LAB space) ----------------
+    lab = cv2.cvtColor(rgb, cv2.COLOR_RGB2LAB).astype(np.float32)
+    margin_h = max(2, h // 10)
+    margin_w = max(2, w // 10)
+    border_mask = np.zeros((h, w), dtype=bool)
+    border_mask[:margin_h, :] = True
+    border_mask[-margin_h:, :] = True
+    border_mask[:, :margin_w] = True
+    border_mask[:, -margin_w:] = True
+    bg_mean = lab[border_mask].mean(axis=0)           # shape (3,)
+
+    # --- 2. Per-pixel colour distance from background -----------------------
+    diff = np.linalg.norm(lab - bg_mean, axis=2)      # shape (H, W)
+
+    # --- 3. Saliency mask: pixels most different from background ------------
+    threshold = float(np.percentile(diff, 65))
+    saliency = ((diff >= threshold).astype(np.uint8)) * 255
+
+    # --- 4. Morphological cleanup to form a solid blob ----------------------
+    k_close = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (17, 17))
+    k_open  = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (9, 9))
+    saliency = cv2.morphologyEx(saliency, cv2.MORPH_CLOSE, k_close, iterations=3)
+    saliency = cv2.morphologyEx(saliency, cv2.MORPH_OPEN,  k_open,  iterations=1)
+
+    # --- 5. Largest contour = dominant lesion --------------------------------
+    contours, _ = cv2.findContours(
+        saliency, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE
+    )
+    if not contours:
+        return image
+
+    contour = max(contours, key=cv2.contourArea)
+    if cv2.contourArea(contour) < 0.015 * h * w:
+        # Lesion too small to be confident — return original
+        return image
+
+    x, y, bw, bh = cv2.boundingRect(contour)
+
+    # 8% padding so the lesion is not cropped right at the edge
+    pad_x = max(6, int(0.08 * bw))
+    pad_y = max(6, int(0.08 * bh))
+    x0 = max(0, x - pad_x)
+    y0 = max(0, y - pad_y)
+    x1 = min(w, x + bw + pad_x)
+    y1 = min(h, y + bh + pad_y)
+
+    # --- 6. Clean rectangular crop — no pixel masking, no black holes -------
+    cropped = rgb[y0:y1, x0:x1]
+    if cropped.size == 0:
+        return image
+
+    return Image.fromarray(cropped)
 
 
 def _save_image(img: Image.Image | np.ndarray, path: Path) -> None:
@@ -117,6 +194,7 @@ def run_analysis(
     image_bytes: bytes,
     models: dict[str, nn.Module],
     crop_factor: float,
+    auto_focus: bool,
     processor: ImageProcessor,
     db: Session,
 ) -> AnalyzeResponse:
@@ -128,6 +206,8 @@ def run_analysis(
 
     # 2. Optional crop
     image = _apply_crop(image, crop_factor)
+    if auto_focus:
+        image = _auto_focus_lesion(image)
 
     # 3. Preprocess once (shared tensor)
     try:

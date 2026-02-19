@@ -86,3 +86,70 @@ export type Language = 'pl' | 'en'
 export type ModelType = 'mobilenet' | 'resnet50' | 'customcnn' | 'vit'
 export type InputMode = 'upload' | 'camera'
 export type Theme = 'system' | 'light' | 'dark'
+
+// ── Body Map ──────────────────────────────────────────────────────────────────
+
+export type BodyMapView = 'front' | 'back'
+
+export interface BodyMapMarker {
+  id: number
+  created_at: string
+  updated_at: string
+  x: number
+  y: number
+  view: BodyMapView
+  label: string
+  notes: string | null
+  scan_id: number | null
+  patient_id: number
+}
+
+export interface BodyMapMarkerCreate {
+  x: number
+  y: number
+  view: BodyMapView
+  label?: string
+  notes?: string | null
+  scan_id?: number | null
+  patient_id: number
+}
+
+export interface BodyMapMarkerUpdate {
+  x?: number
+  y?: number
+  view?: BodyMapView
+  label?: string
+  notes?: string | null
+  scan_id?: number | null
+}
+
+export interface BodyMapMarkerList {
+  total: number
+  items: BodyMapMarker[]
+}
+
+// ── Patient ───────────────────────────────────────────────────────────────────
+
+export interface Patient {
+  id: number
+  created_at: string
+  updated_at: string
+  name: string
+  notes: string | null
+  marker_count: number
+}
+
+export interface PatientCreate {
+  name: string
+  notes?: string | null
+}
+
+export interface PatientUpdate {
+  name?: string
+  notes?: string | null
+}
+
+export interface PatientList {
+  total: number
+  items: Patient[]
+}

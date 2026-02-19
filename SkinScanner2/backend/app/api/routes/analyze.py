@@ -32,6 +32,10 @@ def analyze(
         le=0.5,
         description="Symmetrically crop each edge by this fraction (0 = no crop)",
     ),
+    auto_focus: bool = Form(
+        default=False,
+        description="Clear background and auto-zoom into the dominant lesion ROI",
+    ),
     db=Depends(get_db),
     processor: ImageProcessor = Depends(get_processor),
 ) -> AnalyzeResponse:
@@ -46,6 +50,7 @@ def analyze(
         image_bytes=image_bytes,
         models=models,
         crop_factor=crop_factor,
+        auto_focus=auto_focus,
         processor=processor,
         db=db,
     )

@@ -22,10 +22,14 @@ from app.core.config import DEVICE, settings
 from app.core.exceptions import (
     HistoryEntryNotFoundError,
     ImageProcessingError,
+    MarkerNotFoundError,
     ModelNotLoadedError,
+    PatientNotFoundError,
     history_not_found_handler,
     image_processing_handler,
+    marker_not_found_handler,
     model_not_loaded_handler,
+    patient_not_found_handler,
 )
 from app.core.logging import setup_logging
 from app.db.database import create_tables
@@ -89,6 +93,8 @@ def create_app() -> FastAPI:
     app.add_exception_handler(ModelNotLoadedError, model_not_loaded_handler)          # type: ignore[arg-type]
     app.add_exception_handler(ImageProcessingError, image_processing_handler)         # type: ignore[arg-type]
     app.add_exception_handler(HistoryEntryNotFoundError, history_not_found_handler)   # type: ignore[arg-type]
+    app.add_exception_handler(MarkerNotFoundError, marker_not_found_handler)          # type: ignore[arg-type]
+    app.add_exception_handler(PatientNotFoundError, patient_not_found_handler)        # type: ignore[arg-type]
 
     # ── Routers ──────────────────────────────────────────────────────────────
     app.include_router(api_router, prefix="/api/v1")
