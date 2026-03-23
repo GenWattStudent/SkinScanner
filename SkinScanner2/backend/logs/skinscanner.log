@@ -672,3 +672,18 @@
 2026-02-19 20:09:24 | INFO     | app.services.analyze_service:295 – scan_id=16 | consensus=Melanocytic nevi (53.3%) | risk=0 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
 2026-02-19 20:12:05 | INFO     | app.services.analyze_service:295 – scan_id=17 | consensus=Melanocytic nevi (64.8%) | risk=0 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
 2026-02-19 20:19:16 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-03-16 16:24:29 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-03-16 16:24:29 | INFO     | app.main:47 – Device : cuda
+2026-03-16 16:24:29 | INFO     | app.main:48 – Models : C:\Users\Adrian\Uniwersytet\SkinScanner\SkinScanner2\models
+2026-03-16 16:24:29 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Adrian/Uniwersytet/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-03-16 16:24:29 | INFO     | app.main:52 – Database tables ready
+2026-03-16 16:24:30 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-03-16 16:24:30 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-03-16 16:24:31 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-03-16 16:24:33 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-03-16 16:24:33 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cuda
+2026-03-16 16:24:33 | INFO     | app.main:58 – API ready  🩺
+2026-03-16 16:24:33 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-03-16 17:23:16 | INFO     | app.services.analyze_service:295 – scan_id=18 | consensus=Melanoma (76.8%) | risk=2 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-03-16 17:23:53 | INFO     | app.services.bodymap_service:52 – Created body-map marker id=3 view=front
+2026-03-16 17:23:54 | INFO     | app.services.bodymap_service:52 – Created body-map marker id=4 view=front
