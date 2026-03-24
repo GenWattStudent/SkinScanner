@@ -1,4 +1,4 @@
-import { cn, formatConfidence } from '@/lib/utils'
+import { cn, formatConfidence } from '../../lib/utils'
 import { useAppStore } from '@/store/useAppStore'
 import { Progress } from '@/components/ui/progress'
 import type { ClassPrediction } from '@/types/api'

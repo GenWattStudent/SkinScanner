@@ -1,52 +1,68 @@
-### --- Środowisko wirtualne (VENV) ---
-# Ignorujemy foldery venv widoczne na Twoim screenie
-Include/
-Lib/
-Scripts/
-pyvenv.cfg
-share/
-# Standardowe nazwy venv
+# =============================================
+# Środowisko wirtualne Python (venv)
+# =============================================
 venv/
 .venv/
 env/
+ENV/
+.env/
 
-### --- Python ---
+# Ignorujemy tylko zawartość venv (bezpieczniej niż samo "Lib/")
+**/venv/Lib/
+**/venv/Scripts/
+**/venv/Include/
+**/venv/pyvenv.cfg
+**/venv/share/
+
+# Czasem venv ma też "lib" (na Linux/macOS) — ignorujemy tylko w venv
+**/venv/lib/
+**/venv/lib64/
+
+# =============================================
+# Standardowe rzeczy Python
+# =============================================
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
 build/
-develop-eggs/
 dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.eggs/
+*.h5
+*.pth
+*.onnx
 
-### --- Dane i Wyniki (Projekt SkinScanner) ---
-# Ignorujemy historię przesłanych zdjęć i logi (prywatność pacjenta!)
+# =============================================
+# Frontend (React / Next.js / Vite / shadcn)
+# =============================================
+node_modules/
+dist/
+build/
+.next/
+out/
+
+# Nie ignorujemy folderu lib w src/frontend!
+# (dlatego nie dajemy już samego "lib/")
+
+# =============================================
+# Dane projektu SkinScanner (prywatność + duże pliki)
+# =============================================
 history_images/
 history.csv
 shared_buffer/
 
-# Modele (ciężkie pliki wag sieci neuronowych)
-# Jeśli chcesz trzymać strukturę folderu, ale bez plików wag:
 models/*.h5
 models/*.pth
 models/*.onnx
 models/*.pb
-# Jeśli Twoje modele ważą powyżej 100MB, GitHub ich nie przyjmie bez LFS
 
-### --- Pliki edytorów i systemowe ---
+# =============================================
+# Edytory, systemy, tmp
+# =============================================
 .vscode/
 .idea/
 *.swp
@@ -55,6 +71,9 @@ models/*.pb
 Thumbs.db
 desktop.ini
 
-/node_modules/
-dist/
-node_modules/
+# Pliki środowiskowe
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
