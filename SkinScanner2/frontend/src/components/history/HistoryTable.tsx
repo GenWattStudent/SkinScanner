@@ -82,6 +82,8 @@ export function HistoryTable() {
             : entry.consensus_class_key
           const modelCount = entry.model_results.length
 
+          console.log('Entry:', entry) // Debug log for entry data
+
           return (
             <div
               key={entry.id}
