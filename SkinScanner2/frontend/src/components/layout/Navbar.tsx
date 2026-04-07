@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 import { ScanLine, History, Video, PersonStanding, Settings, Info } from 'lucide-react'
 import { useAppStore } from '@/store/useAppStore'
 import { cn } from '@/lib/utils'
+import Logo from '../../assets/SkinScannerLogo.png'
 
 interface NavItem {
   to: string
@@ -29,10 +30,7 @@ export function Navbar({ onSettingsOpen }: NavbarProps) {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
         {/* Logo */}
         <NavLink to="/" className="flex items-center gap-2.5">
-          <span className="text-2xl">🩺</span>
-          <span className="text-lg font-bold tracking-tight">
-            {t('appName')}
-          </span>
+          <img className='w-24' src={Logo} alt="Skin Scanner logo" />
         </NavLink>
 
         {/* Desktop nav */}
