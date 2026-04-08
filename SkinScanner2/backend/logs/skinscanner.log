@@ -701,3 +701,25 @@
 2026-03-24 13:14:26 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 2026-03-24 13:26:59 | INFO     | app.services.analyze_service:295 – scan_id=19 | consensus=Cowpox (99.7%) | risk=1 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
 2026-03-24 13:27:26 | INFO     | app.services.analyze_service:295 – scan_id=20 | consensus=Cowpox (85.4%) | risk=1 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-04-07 10:37:09 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-04-07 10:37:09 | INFO     | app.main:47 – Device : cpu
+2026-04-07 10:37:09 | INFO     | app.main:48 – Models : C:\Users\Admin\apps\skin\SkinScanner\SkinScanner2\models
+2026-04-07 10:37:09 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Admin/apps/skin/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-04-07 10:37:09 | INFO     | app.main:52 – Database tables ready
+2026-04-07 10:37:09 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-04-07 10:37:09 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-04-07 10:37:10 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-04-07 10:37:12 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-04-07 10:37:12 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cpu
+2026-04-07 10:37:12 | INFO     | app.main:58 – API ready  🩺
+2026-04-07 10:37:12 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-07 10:37:19 | INFO     | app.services.analyze_service:295 – scan_id=23 | consensus=Cowpox (85.4%) | risk=1 | models=['mobilenet', 'resnet50', 'customcnn', 'vit']
+2026-04-07 10:42:33 | INFO     | app.services.bodymap_service:66 – Updated body-map marker id=4
+2026-04-07 10:42:39 | INFO     | app.services.bodymap_service:66 – Updated body-map marker id=4
+2026-04-07 10:42:45 | INFO     | app.services.bodymap_service:52 – Created body-map marker id=7 view=front
+2026-04-07 10:42:50 | INFO     | app.services.bodymap_service:75 – Deleted body-map marker id=7
+2026-04-07 14:13:26 | INFO     | app.services.bodymap_service:52 – Created body-map marker id=7 view=front
+2026-04-07 14:13:29 | INFO     | app.services.bodymap_service:75 – Deleted body-map marker id=7
+2026-04-07 14:13:32 | INFO     | app.services.bodymap_service:75 – Deleted body-map marker id=3
+2026-04-07 14:13:35 | INFO     | app.services.bodymap_service:75 – Deleted body-map marker id=5
+2026-04-07 14:13:38 | INFO     | app.services.bodymap_service:75 – Deleted body-map marker id=6
