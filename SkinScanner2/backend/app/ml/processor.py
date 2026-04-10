@@ -98,6 +98,9 @@ class ImageProcessor:
                 target_layers = [model.encoder.layers[-1].ln_1]
                 reshape_transform = _reshape_transform_vit
 
+            elif model_type == 'efficientnet':
+                target_layers = [model.features[-1]]
+
             elif model_type == "customcnn":
                 # Prefer model.features; fall back to last Conv2d in module tree
                 if hasattr(model, "features"):

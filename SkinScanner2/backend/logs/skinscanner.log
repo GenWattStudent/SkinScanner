@@ -723,3 +723,234 @@
 2026-04-07 14:13:32 | INFO     | app.services.bodymap_service:75 – Deleted body-map marker id=3
 2026-04-07 14:13:35 | INFO     | app.services.bodymap_service:75 – Deleted body-map marker id=5
 2026-04-07 14:13:38 | INFO     | app.services.bodymap_service:75 – Deleted body-map marker id=6
+2026-04-10 12:55:10 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-04-10 12:55:10 | INFO     | app.main:47 – Device : cpu
+2026-04-10 12:55:10 | INFO     | app.main:48 – Models : C:\Users\Admin\apps\skin\SkinScanner\SkinScanner2\models
+2026-04-10 12:55:10 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Admin/apps/skin/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-04-10 12:55:10 | INFO     | app.main:52 – Database tables ready
+2026-04-10 12:55:11 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-04-10 12:55:11 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-04-10 12:55:12 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-04-10 12:55:14 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-04-10 12:55:14 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cpu
+2026-04-10 12:55:14 | INFO     | app.main:58 – API ready  🩺
+2026-04-10 12:55:14 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:38:50 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-04-10 13:39:05 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:39:05 | INFO     | app.main:47 – Device : cpu
+2026-04-10 13:39:05 | INFO     | app.main:48 – Models : C:\Users\Admin\apps\skin\SkinScanner\SkinScanner2\models
+2026-04-10 13:39:05 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Admin/apps/skin/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-04-10 13:39:05 | INFO     | app.main:52 – Database tables ready
+2026-04-10 13:39:05 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-04-10 13:39:05 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-04-10 13:39:06 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-04-10 13:39:07 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-04-10 13:39:07 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cpu
+2026-04-10 13:39:07 | INFO     | app.main:58 – API ready  🩺
+2026-04-10 13:39:07 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:40:31 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-04-10 13:40:38 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:40:38 | INFO     | app.main:47 – Device : cpu
+2026-04-10 13:40:38 | INFO     | app.main:48 – Models : C:\Users\Admin\apps\skin\SkinScanner\SkinScanner2\models
+2026-04-10 13:40:38 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Admin/apps/skin/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-04-10 13:40:38 | INFO     | app.main:52 – Database tables ready
+2026-04-10 13:40:39 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-04-10 13:40:39 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-04-10 13:40:39 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-04-10 13:40:40 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-04-10 13:40:40 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/4) | device=cpu
+2026-04-10 13:40:40 | INFO     | app.main:58 – API ready  🩺
+2026-04-10 13:40:40 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:41:18 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-04-10 13:41:24 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:41:24 | INFO     | app.main:47 – Device : cpu
+2026-04-10 13:41:24 | INFO     | app.main:48 – Models : C:\Users\Admin\apps\skin\SkinScanner\SkinScanner2\models
+2026-04-10 13:41:24 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Admin/apps/skin/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-04-10 13:41:24 | INFO     | app.main:52 – Database tables ready
+2026-04-10 13:41:24 | INFO     | app.ml.loader:77 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-04-10 13:41:25 | INFO     | app.ml.loader:77 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-04-10 13:41:25 | INFO     | app.ml.loader:77 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-04-10 13:41:27 | INFO     | app.ml.loader:77 – ✓ Loaded [vit] from ViT_best.pth
+2026-04-10 13:41:27 | ERROR    | app.ml.loader:81 – ✗ Failed to load [efficientnet]: Unknown model_type: 'efficientnet'
+2026-04-10 13:41:27 | INFO     | app.ml.loader:93 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/5) | device=cpu
+2026-04-10 13:41:27 | INFO     | app.main:58 – API ready  🩺
+2026-04-10 13:41:27 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:42:30 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-04-10 13:42:38 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:42:38 | INFO     | app.main:47 – Device : cpu
+2026-04-10 13:42:38 | INFO     | app.main:48 – Models : C:\Users\Admin\apps\skin\SkinScanner\SkinScanner2\models
+2026-04-10 13:42:38 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Admin/apps/skin/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-04-10 13:42:38 | INFO     | app.main:52 – Database tables ready
+2026-04-10 13:42:38 | INFO     | app.ml.loader:81 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-04-10 13:42:38 | INFO     | app.ml.loader:81 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-04-10 13:42:39 | INFO     | app.ml.loader:81 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-04-10 13:42:40 | INFO     | app.ml.loader:81 – ✓ Loaded [vit] from ViT_best.pth
+2026-04-10 13:42:40 | ERROR    | app.ml.loader:85 – ✗ Failed to load [efficientnet]: index 3 is out of range
+2026-04-10 13:42:40 | INFO     | app.ml.loader:97 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/5) | device=cpu
+2026-04-10 13:42:40 | INFO     | app.main:58 – API ready  🩺
+2026-04-10 13:42:40 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:43:39 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-04-10 13:43:47 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:43:47 | INFO     | app.main:47 – Device : cpu
+2026-04-10 13:43:47 | INFO     | app.main:48 – Models : C:\Users\Admin\apps\skin\SkinScanner\SkinScanner2\models
+2026-04-10 13:43:47 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Admin/apps/skin/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-04-10 13:43:47 | INFO     | app.main:52 – Database tables ready
+2026-04-10 13:43:47 | INFO     | app.ml.loader:82 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-04-10 13:43:47 | INFO     | app.ml.loader:82 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-04-10 13:43:48 | INFO     | app.ml.loader:82 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-04-10 13:43:49 | INFO     | app.ml.loader:82 – ✓ Loaded [vit] from ViT_best.pth
+2026-04-10 13:43:49 | ERROR    | app.ml.loader:86 – ✗ Failed to load [efficientnet]: index 3 is out of range
+2026-04-10 13:43:49 | INFO     | app.ml.loader:98 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/5) | device=cpu
+2026-04-10 13:43:49 | INFO     | app.main:58 – API ready  🩺
+2026-04-10 13:43:49 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:44:39 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-04-10 13:44:46 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:44:46 | INFO     | app.main:47 – Device : cpu
+2026-04-10 13:44:46 | INFO     | app.main:48 – Models : C:\Users\Admin\apps\skin\SkinScanner\SkinScanner2\models
+2026-04-10 13:44:46 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Admin/apps/skin/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-04-10 13:44:46 | INFO     | app.main:52 – Database tables ready
+2026-04-10 13:44:46 | INFO     | app.ml.loader:82 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-04-10 13:44:47 | INFO     | app.ml.loader:82 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-04-10 13:44:47 | INFO     | app.ml.loader:82 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-04-10 13:44:48 | INFO     | app.ml.loader:82 – ✓ Loaded [vit] from ViT_best.pth
+2026-04-10 13:44:48 | ERROR    | app.ml.loader:86 – ✗ Failed to load [efficientnet]: index 3 is out of range
+2026-04-10 13:44:48 | INFO     | app.ml.loader:98 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/5) | device=cpu
+2026-04-10 13:44:48 | INFO     | app.main:58 – API ready  🩺
+2026-04-10 13:44:48 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:44:48 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-04-10 13:44:59 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:44:59 | INFO     | app.main:47 – Device : cpu
+2026-04-10 13:44:59 | INFO     | app.main:48 – Models : C:\Users\Admin\apps\skin\SkinScanner\SkinScanner2\models
+2026-04-10 13:44:59 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Admin/apps/skin/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-04-10 13:44:59 | INFO     | app.main:52 – Database tables ready
+2026-04-10 13:44:59 | INFO     | app.ml.loader:82 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-04-10 13:44:59 | INFO     | app.ml.loader:82 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-04-10 13:45:00 | INFO     | app.ml.loader:82 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-04-10 13:45:01 | INFO     | app.ml.loader:82 – ✓ Loaded [vit] from ViT_best.pth
+2026-04-10 13:45:01 | ERROR    | app.ml.loader:86 – ✗ Failed to load [efficientnet]: index 3 is out of range
+2026-04-10 13:45:01 | INFO     | app.ml.loader:98 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/5) | device=cpu
+2026-04-10 13:45:01 | INFO     | app.main:58 – API ready  🩺
+2026-04-10 13:45:01 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:48:17 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-04-10 13:48:25 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:48:25 | INFO     | app.main:47 – Device : cpu
+2026-04-10 13:48:25 | INFO     | app.main:48 – Models : C:\Users\Admin\apps\skin\SkinScanner\SkinScanner2\models
+2026-04-10 13:48:25 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Admin/apps/skin/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-04-10 13:48:25 | INFO     | app.main:52 – Database tables ready
+2026-04-10 13:48:25 | INFO     | app.ml.loader:82 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-04-10 13:48:26 | INFO     | app.ml.loader:82 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-04-10 13:48:26 | INFO     | app.ml.loader:82 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-04-10 13:48:27 | INFO     | app.ml.loader:82 – ✓ Loaded [vit] from ViT_best.pth
+2026-04-10 13:48:27 | ERROR    | app.ml.loader:86 – ✗ Failed to load [efficientnet]: 'EfficientNet' object has no attribute 'fc'
+2026-04-10 13:48:27 | INFO     | app.ml.loader:98 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/5) | device=cpu
+2026-04-10 13:48:27 | INFO     | app.main:58 – API ready  🩺
+2026-04-10 13:48:27 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:51:02 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-04-10 13:51:10 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:51:10 | INFO     | app.main:47 – Device : cpu
+2026-04-10 13:51:10 | INFO     | app.main:48 – Models : C:\Users\Admin\apps\skin\SkinScanner\SkinScanner2\models
+2026-04-10 13:51:10 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Admin/apps/skin/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-04-10 13:51:10 | INFO     | app.main:52 – Database tables ready
+2026-04-10 13:51:10 | INFO     | app.ml.loader:82 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-04-10 13:51:11 | INFO     | app.ml.loader:82 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-04-10 13:51:11 | INFO     | app.ml.loader:82 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-04-10 13:51:12 | INFO     | app.ml.loader:82 – ✓ Loaded [vit] from ViT_best.pth
+2026-04-10 13:51:12 | INFO     | app.ml.loader:82 – ✓ Loaded [efficientnet] from EfficientNet_best.pth
+2026-04-10 13:51:12 | INFO     | app.ml.loader:98 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit', 'efficientnet'] (5/5) | device=cpu
+2026-04-10 13:51:12 | INFO     | app.main:58 – API ready  🩺
+2026-04-10 13:51:12 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:51:30 | WARNING  | app.ml.processor:116 – No Grad-CAM target layer found for model_type='efficientnet'
+2026-04-10 13:51:30 | INFO     | app.services.analyze_service:295 – scan_id=24 | consensus=Cowpox (88.3%) | risk=1 | models=['mobilenet', 'resnet50', 'customcnn', 'vit', 'efficientnet']
+2026-04-10 13:54:01 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-04-10 13:54:08 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:54:08 | INFO     | app.main:47 – Device : cpu
+2026-04-10 13:54:08 | INFO     | app.main:48 – Models : C:\Users\Admin\apps\skin\SkinScanner\SkinScanner2\models
+2026-04-10 13:54:08 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Admin/apps/skin/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-04-10 13:54:08 | INFO     | app.main:52 – Database tables ready
+2026-04-10 13:54:08 | INFO     | app.ml.loader:82 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-04-10 13:54:08 | INFO     | app.ml.loader:82 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-04-10 13:54:09 | INFO     | app.ml.loader:82 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-04-10 13:54:10 | INFO     | app.ml.loader:82 – ✓ Loaded [vit] from ViT_best.pth
+2026-04-10 13:54:10 | ERROR    | app.ml.loader:86 – ✗ Failed to load [efficientnet]: Error(s) in loading state_dict for EfficientNet:
+	size mismatch for classifier.1.weight: copying a param with shape torch.Size([14, 1280]) from checkpoint, the shape in current model is torch.Size([1000, 1280]).
+	size mismatch for classifier.1.bias: copying a param with shape torch.Size([14]) from checkpoint, the shape in current model is torch.Size([1000]).
+2026-04-10 13:54:10 | INFO     | app.ml.loader:98 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/5) | device=cpu
+2026-04-10 13:54:10 | INFO     | app.main:58 – API ready  🩺
+2026-04-10 13:54:10 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:54:10 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-04-10 13:54:19 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:54:19 | INFO     | app.main:47 – Device : cpu
+2026-04-10 13:54:19 | INFO     | app.main:48 – Models : C:\Users\Admin\apps\skin\SkinScanner\SkinScanner2\models
+2026-04-10 13:54:19 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Admin/apps/skin/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-04-10 13:54:19 | INFO     | app.main:52 – Database tables ready
+2026-04-10 13:54:19 | INFO     | app.ml.loader:82 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-04-10 13:54:19 | INFO     | app.ml.loader:82 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-04-10 13:54:20 | INFO     | app.ml.loader:82 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-04-10 13:54:21 | INFO     | app.ml.loader:82 – ✓ Loaded [vit] from ViT_best.pth
+2026-04-10 13:54:21 | ERROR    | app.ml.loader:86 – ✗ Failed to load [efficientnet]: Error(s) in loading state_dict for EfficientNet:
+	size mismatch for classifier.1.weight: copying a param with shape torch.Size([14, 1280]) from checkpoint, the shape in current model is torch.Size([1000, 1280]).
+	size mismatch for classifier.1.bias: copying a param with shape torch.Size([14]) from checkpoint, the shape in current model is torch.Size([1000]).
+2026-04-10 13:54:21 | INFO     | app.ml.loader:98 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/5) | device=cpu
+2026-04-10 13:54:21 | INFO     | app.main:58 – API ready  🩺
+2026-04-10 13:54:21 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:54:34 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-04-10 13:54:42 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:54:42 | INFO     | app.main:47 – Device : cpu
+2026-04-10 13:54:42 | INFO     | app.main:48 – Models : C:\Users\Admin\apps\skin\SkinScanner\SkinScanner2\models
+2026-04-10 13:54:42 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Admin/apps/skin/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-04-10 13:54:42 | INFO     | app.main:52 – Database tables ready
+2026-04-10 13:54:42 | INFO     | app.ml.loader:82 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-04-10 13:54:43 | INFO     | app.ml.loader:82 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-04-10 13:54:43 | INFO     | app.ml.loader:82 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-04-10 13:54:44 | INFO     | app.ml.loader:82 – ✓ Loaded [vit] from ViT_best.pth
+2026-04-10 13:54:44 | ERROR    | app.ml.loader:86 – ✗ Failed to load [efficientnet]: Error(s) in loading state_dict for EfficientNet:
+	Missing key(s) in state_dict: "features.weight", "features.bias". 
+	Unexpected key(s) in state_dict: "features.0.0.weight", "features.0.1.weight", "features.0.1.bias", "features.0.1.running_mean", "features.0.1.running_var", "features.0.1.num_batches_tracked", "features.1.0.block.0.0.weight", "features.1.0.block.0.1.weight", "features.1.0.block.0.1.bias", "features.1.0.block.0.1.running_mean", "features.1.0.block.0.1.running_var", "features.1.0.block.0.1.num_batches_tracked", "features.1.0.block.1.fc1.weight", "features.1.0.block.1.fc1.bias", "features.1.0.block.1.fc2.weight", "features.1.0.block.1.fc2.bias", "features.1.0.block.2.0.weight", "features.1.0.block.2.1.weight", "features.1.0.block.2.1.bias", "features.1.0.block.2.1.running_mean", "features.1.0.block.2.1.running_var", "features.1.0.block.2.1.num_batches_tracked", "features.2.0.block.0.0.weight", "features.2.0.block.0.1.weight", "features.2.0.block.0.1.bias", "features.2.0.block.0.1.running_mean", "features.2.0.block.0.1.running_var", "features.2.0.block.0.1.num_batches_tracked", "features.2.0.block.1.0.weight", "features.2.0.block.1.1.weight", "features.2.0.block.1.1.bias", "features.2.0.block.1.1.running_mean", "features.2.0.block.1.1.running_var", "features.2.0.block.1.1.num_batches_tracked", "features.2.0.block.2.fc1.weight", "features.2.0.block.2.fc1.bias", "features.2.0.block.2.fc2.weight", "features.2.0.block.2.fc2.bias", "features.2.0.block.3.0.weight", "features.2.0.block.3.1.weight", "features.2.0.block.3.1.bias", "features.2.0.block.3.1.running_mean", "features.2.0.block.3.1.running_var", "features.2.0.block.3.1.num_batches_tracked", "features.2.1.block.0.0.weight", "features.2.1.block.0.1.weight", "features.2.1.block.0.1.bias", "features.2.1.block.0.1.running_mean", "features.2.1.block.0.1.running_var", "features.2.1.block.0.1.num_batches_tracked", "features.2.1.block.1.0.weight", "features.2.1.block.1.1.weight", "features.2.1.block.1.1.bias", "features.2.1.block.1.1.running_mean", "features.2.1.block.1.1.running_var", "features.2.1.block.1.1.num_batches_tracked", "features.2.1.block.2.fc1.weight", "features.2.1.block.2.fc1.bias", "features.2.1.block.2.fc2.weight", "features.2.1.block.2.fc2.bias", "features.2.1.block.3.0.weight", "features.2.1.block.3.1.weight", "features.2.1.block.3.1.bias", "features.2.1.block.3.1.running_mean", "features.2.1.block.3.1.running_var", "features.2.1.block.3.1.num_batches_tracked", "features.3.0.block.0.0.weight", "features.3.0.block.0.1.weight", "features.3.0.block.0.1.bias", "features.3.0.block.0.1.running_mean", "features.3.0.block.0.1.running_var", "features.3.0.block.0.1.num_batches_tracked", "features.3.0.block.1.0.weight", "features.3.0.block.1.1.weight", "features.3.0.block.1.1.bias", "features.3.0.block.1.1.running_mean", "features.3.0.block.1.1.running_var", "features.3.0.block.1.1.num_batches_tracked", "features.3.0.block.2.fc1.weight", "features.3.0.block.2.fc1.bias", "features.3.0.block.2.fc2.weight", "features.3.0.block.2.fc2.bias", "features.3.0.block.3.0.weight", "features.3.0.block.3.1.weight", "features.3.0.block.3.1.bias", "features.3.0.block.3.1.running_mean", "features.3.0.block.3.1.running_var", "features.3.0.block.3.1.num_batches_tracked", "features.3.1.block.0.0.weight", "features.3.1.block.0.1.weight", "features.3.1.block.0.1.bias", "features.3.1.block.0.1.running_mean", "features.3.1.block.0.1.running_var", "features.3.1.block.0.1.num_batches_tracked", "features.3.1.block.1.0.weight", "features.3.1.block.1.1.weight", "features.3.1.block.1.1.bias", "features.3.1.block.1.1.running_mean", "features.3.1.block.1.1.running_var", "features.3.1.block.1.1.num_batches_tracked", "features.3.1.block.2.fc1.weight", "features.3.1.block.2.fc1.bias", "features.3.1.block.2.fc2.weight", "features.3.1.block.2.fc2.bias", "features.3.1.block.3.0.weight", "features.3.1.block.3.1.weight", "features.3.1.block.3.1.bias", "features.3.1.block.3.1.running_mean", "features.3.1.block.3.1.running_var", "features.3.1.block.3.1.num_batches_tracked", "features.4.0.block.0.0.weight", "features.4.0.block.0.1.weight", "features.4.0.block.0.1.bias", "features.4.0.block.0.1.running_mean", "features.4.0.block.0.1.running_var", "features.4.0.block.0.1.num_batches_tracked", "features.4.0.block.1.0.weight", "features.4.0.block.1.1.weight", "features.4.0.block.1.1.bias", "features.4.0.block.1.1.running_mean", "features.4.0.block.1.1.running_var", "features.4.0.block.1.1.num_batches_tracked", "features.4.0.block.2.fc1.weight", "features.4.0.block.2.fc1.bias", "features.4.0.block.2.fc2.weight", "features.4.0.block.2.fc2.bias", "features.4.0.block.3.0.weight", "features.4.0.block.3.1.weight", "features.4.0.block.3.1.bias", "features.4.0.block.3.1.running_mean", "features.4.0.block.3.1.running_var", "features.4.0.block.3.1.num_batches_tracked", "features.4.1.block.0.0.weight", "features.4.1.block.0.1.weight", "features.4.1.block.0.1.bias", "features.4.1.block.0.1.running_mean", "features.4.1.block.0.1.running_var", "features.4.1.block.0.1.num_batches_tracked", "features.4.1.block.1.0.weight", "features.4.1.block.1.1.weight", "features.4.1.block.1.1.bias", "features.4.1.block.1.1.running_mean", "features.4.1.block.1.1.running_var", "features.4.1.block.1.1.num_batches_tracked", "features.4.1.block.2.fc1.weight", "features.4.1.block.2.fc1.bias", "features.4.1.block.2.fc2.weight", "features.4.1.block.2.fc2.bias", "features.4.1.block.3.0.weight", "features.4.1.block.3.1.weight", "features.4.1.block.3.1.bias", "features.4.1.block.3.1.running_mean", "features.4.1.block.3.1.running_var", "features.4.1.block.3.1.num_batches_tracked", "features.4.2.block.0.0.weight", "features.4.2.block.0.1.weight", "features.4.2.block.0.1.bias", "features.4.2.block.0.1.running_mean", "features.4.2.block.0.1.running_var", "features.4.2.block.0.1.num_batches_tracked", "features.4.2.block.1.0.weight", "features.4.2.block.1.1.weight", "features.4.2.block.1.1.bias", "features.4.2.block.1.1.running_mean", "features.4.2.block.1.1.running_var", "features.4.2.block.1.1.num_batches_tracked", "features.4.2.block.2.fc1.weight", "features.4.2.block.2.fc1.bias", "features.4.2.block.2.fc2.weight", "features.4.2.block.2.fc2.bias", "features.4.2.block.3.0.weight", "features.4.2.block.3.1.weight", "features.4.2.block.3.1.bias", "features.4.2.block.3.1.running_mean", "features.4.2.block.3.1.running_var", "features.4.2.block.3.1.num_batches_tracked", "features.5.0.block.0.0.weight", "features.5.0.block.0.1.weight", "features.5.0.block.0.1.bias", "features.5.0.block.0.1.running_mean", "features.5.0.block.0.1.running_var", "features.5.0.block.0.1.num_batches_tracked", "features.5.0.block.1.0.weight", "features.5.0.block.1.1.weight", "features.5.0.block.1.1.bias", "features.5.0.block.1.1.running_mean", "features.5.0.block.1.1.running_var", "features.5.0.block.1.1.num_batches_tracked", "features.5.0.block.2.fc1.weight", "features.5.0.block.2.fc1.bias", "features.5.0.block.2.fc2.weight", "features.5.0.block.2.fc2.bias", "features.5.0.block.3.0.weight", "features.5.0.block.3.1.weight", "features.5.0.block.3.1.bias", "features.5.0.block.3.1.running_mean", "features.5.0.block.3.1.running_var", "features.5.0.block.3.1.num_batches_tracked", "features.5.1.block.0.0.weight", "features.5.1.block.0.1.weight", "features.5.1.block.0.1.bias", "features.5.1.block.0.1.running_mean", "features.5.1.block.0.1.running_var", "features.5.1.block.0.1.num_batches_tracked", "features.5.1.block.1.0.weight", "features.5.1.block.1.1.weight", "features.5.1.block.1.1.bias", "features.5.1.block.1.1.running_mean", "features.5.1.block.1.1.running_var", "features.5.1.block.1.1.num_batches_tracked", "features.5.1.block.2.fc1.weight", "features.5.1.block.2.fc1.bias", "features.5.1.block.2.fc2.weight", "features.5.1.block.2.fc2.bias", "features.5.1.block.3.0.weight", "features.5.1.block.3.1.weight", "features.5.1.block.3.1.bias", "features.5.1.block.3.1.running_mean", "features.5.1.block.3.1.running_var", "features.5.1.block.3.1.num_batches_tracked", "features.5.2.block.0.0.weight", "features.5.2.block.0.1.weight", "features.5.2.block.0.1.bias", "features.5.2.block.0.1.running_mean", "features.5.2.block.0.1.running_var", "features.5.2.block.0.1.num_batches_tracked", "features.5.2.block.1.0.weight", "features.5.2.block.1.1.weight", "features.5.2.block.1.1.bias", "features.5.2.block.1.1.running_mean", "features.5.2.block.1.1.running_var", "features.5.2.block.1.1.num_batches_tracked", "features.5.2.block.2.fc1.weight", "features.5.2.block.2.fc1.bias", "features.5.2.block.2.fc2.weight", "features.5.2.block.2.fc2.bias", "features.5.2.block.3.0.weight", "features.5.2.block.3.1.weight", "features.5.2.block.3.1.bias", "features.5.2.block.3.1.running_mean", "features.5.2.block.3.1.running_var", "features.5.2.block.3.1.num_batches_tracked", "features.6.0.block.0.0.weight", "features.6.0.block.0.1.weight", "features.6.0.block.0.1.bias", "features.6.0.block.0.1.running_mean", "features.6.0.block.0.1.running_var", "features.6.0.block.0.1.num_batches_tracked", "features.6.0.block.1.0.weight", "features.6.0.block.1.1.weight", "features.6.0.block.1.1.bias", "features.6.0.block.1.1.running_mean", "features.6.0.block.1.1.running_var", "features.6.0.block.1.1.num_batches_tracked", "features.6.0.block.2.fc1.weight", "features.6.0.block.2.fc1.bias", "features.6.0.block.2.fc2.weight", "features.6.0.block.2.fc2.bias", "features.6.0.block.3.0.weight", "features.6.0.block.3.1.weight", "features.6.0.block.3.1.bias", "features.6.0.block.3.1.running_mean", "features.6.0.block.3.1.running_var", "features.6.0.block.3.1.num_batches_tracked", "features.6.1.block.0.0.weight", "features.6.1.block.0.1.weight", "features.6.1.block.0.1.bias", "features.6.1.block.0.1.running_mean", "features.6.1.block.0.1.running_var", "features.6.1.block.0.1.num_batches_tracked", "features.6.1.block.1.0.weight", "features.6.1.block.1.1.weight", "features.6.1.block.1.1.bias", "features.6.1.block.1.1.running_mean", "features.6.1.block.1.1.running_var", "features.6.1.block.1.1.num_batches_tracked", "features.6.1.block.2.fc1.weight", "features.6.1.block.2.fc1.bias", "features.6.1.block.2.fc2.weight", "features.6.1.block.2.fc2.bias", "features.6.1.block.3.0.weight", "features.6.1.block.3.1.weight", "features.6.1.block.3.1.bias", "features.6.1.block.3.1.running_mean", "features.6.1.block.3.1.running_var", "features.6.1.block.3.1.num_batches_tracked", "features.6.2.block.0.0.weight", "features.6.2.block.0.1.weight", "features.6.2.block.0.1.bias", "features.6.2.block.0.1.running_mean", "features.6.2.block.0.1.running_var", "features.6.2.block.0.1.num_batches_tracked", "features.6.2.block.1.0.weight", "features.6.2.block.1.1.weight", "features.6.2.block.1.1.bias", "features.6.2.block.1.1.running_mean", "features.6.2.block.1.1.running_var", "features.6.2.block.1.1.num_batches_tracked", "features.6.2.block.2.fc1.weight", "features.6.2.block.2.fc1.bias", "features.6.2.block.2.fc2.weight", "features.6.2.block.2.fc2.bias", "features.6.2.block.3.0.weight", "features.6.2.block.3.1.weight", "features.6.2.block.3.1.bias", "features.6.2.block.3.1.running_mean", "features.6.2.block.3.1.running_var", "features.6.2.block.3.1.num_batches_tracked", "features.6.3.block.0.0.weight", "features.6.3.block.0.1.weight", "features.6.3.block.0.1.bias", "features.6.3.block.0.1.running_mean", "features.6.3.block.0.1.running_var", "features.6.3.block.0.1.num_batches_tracked", "features.6.3.block.1.0.weight", "features.6.3.block.1.1.weight", "features.6.3.block.1.1.bias", "features.6.3.block.1.1.running_mean", "features.6.3.block.1.1.running_var", "features.6.3.block.1.1.num_batches_tracked", "features.6.3.block.2.fc1.weight", "features.6.3.block.2.fc1.bias", "features.6.3.block.2.fc2.weight", "features.6.3.block.2.fc2.bias", "features.6.3.block.3.0.weight", "features.6.3.block.3.1.weight", "features.6.3.block.3.1.bias", "features.6.3.block.3.1.running_mean", "features.6.3.block.3.1.running_var", "features.6.3.block.3.1.num_batches_tracked", "features.7.0.block.0.0.weight", "features.7.0.block.0.1.weight", "features.7.0.block.0.1.bias", "features.7.0.block.0.1.running_mean", "features.7.0.block.0.1.running_var", "features.7.0.block.0.1.num_batches_tracked", "features.7.0.block.1.0.weight", "features.7.0.block.1.1.weight", "features.7.0.block.1.1.bias", "features.7.0.block.1.1.running_mean", "features.7.0.block.1.1.running_var", "features.7.0.block.1.1.num_batches_tracked", "features.7.0.block.2.fc1.weight", "features.7.0.block.2.fc1.bias", "features.7.0.block.2.fc2.weight", "features.7.0.block.2.fc2.bias", "features.7.0.block.3.0.weight", "features.7.0.block.3.1.weight", "features.7.0.block.3.1.bias", "features.7.0.block.3.1.running_mean", "features.7.0.block.3.1.running_var", "features.7.0.block.3.1.num_batches_tracked", "features.8.0.weight", "features.8.1.weight", "features.8.1.bias", "features.8.1.running_mean", "features.8.1.running_var", "features.8.1.num_batches_tracked". 
+	size mismatch for classifier.1.weight: copying a param with shape torch.Size([14, 1280]) from checkpoint, the shape in current model is torch.Size([1000, 1280]).
+	size mismatch for classifier.1.bias: copying a param with shape torch.Size([14]) from checkpoint, the shape in current model is torch.Size([1000]).
+2026-04-10 13:54:44 | INFO     | app.ml.loader:98 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit'] (4/5) | device=cpu
+2026-04-10 13:54:44 | INFO     | app.main:58 – API ready  🩺
+2026-04-10 13:54:44 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:54:45 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-04-10 13:54:52 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:54:52 | INFO     | app.main:47 – Device : cpu
+2026-04-10 13:54:52 | INFO     | app.main:48 – Models : C:\Users\Admin\apps\skin\SkinScanner\SkinScanner2\models
+2026-04-10 13:54:52 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Admin/apps/skin/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-04-10 13:54:52 | INFO     | app.main:52 – Database tables ready
+2026-04-10 13:54:52 | INFO     | app.ml.loader:82 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-04-10 13:54:53 | INFO     | app.ml.loader:82 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-04-10 13:54:53 | INFO     | app.ml.loader:82 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-04-10 13:54:55 | INFO     | app.ml.loader:82 – ✓ Loaded [vit] from ViT_best.pth
+2026-04-10 13:54:55 | INFO     | app.ml.loader:82 – ✓ Loaded [efficientnet] from EfficientNet_best.pth
+2026-04-10 13:54:55 | INFO     | app.ml.loader:98 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit', 'efficientnet'] (5/5) | device=cpu
+2026-04-10 13:54:55 | INFO     | app.main:58 – API ready  🩺
+2026-04-10 13:54:55 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:54:55 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-04-10 13:55:05 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:55:05 | INFO     | app.main:47 – Device : cpu
+2026-04-10 13:55:05 | INFO     | app.main:48 – Models : C:\Users\Admin\apps\skin\SkinScanner\SkinScanner2\models
+2026-04-10 13:55:05 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Admin/apps/skin/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-04-10 13:55:05 | INFO     | app.main:52 – Database tables ready
+2026-04-10 13:55:05 | INFO     | app.ml.loader:82 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-04-10 13:55:06 | INFO     | app.ml.loader:82 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-04-10 13:55:06 | INFO     | app.ml.loader:82 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-04-10 13:55:07 | INFO     | app.ml.loader:82 – ✓ Loaded [vit] from ViT_best.pth
+2026-04-10 13:55:08 | INFO     | app.ml.loader:82 – ✓ Loaded [efficientnet] from EfficientNet_best.pth
+2026-04-10 13:55:08 | INFO     | app.ml.loader:98 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit', 'efficientnet'] (5/5) | device=cpu
+2026-04-10 13:55:08 | INFO     | app.main:58 – API ready  🩺
+2026-04-10 13:55:08 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:55:57 | INFO     | app.main:64 – SkinScanner API shutting down
+2026-04-10 13:56:06 | INFO     | app.main:46 – ━━━━━━━━━━━━━━━━━━━━  SkinScanner API  ━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:56:06 | INFO     | app.main:47 – Device : cpu
+2026-04-10 13:56:06 | INFO     | app.main:48 – Models : C:\Users\Admin\apps\skin\SkinScanner\SkinScanner2\models
+2026-04-10 13:56:06 | INFO     | app.main:49 – DB     : sqlite:///C:/Users/Admin/apps/skin/SkinScanner/SkinScanner2/backend/skinscanner.db
+2026-04-10 13:56:06 | INFO     | app.main:52 – Database tables ready
+2026-04-10 13:56:06 | INFO     | app.ml.loader:82 – ✓ Loaded [mobilenet] from MobileNetV3_best.pth
+2026-04-10 13:56:07 | INFO     | app.ml.loader:82 – ✓ Loaded [resnet50] from ResNet50_best.pth
+2026-04-10 13:56:08 | INFO     | app.ml.loader:82 – ✓ Loaded [customcnn] from CustomCNN_best.pth
+2026-04-10 13:56:09 | INFO     | app.ml.loader:82 – ✓ Loaded [vit] from ViT_best.pth
+2026-04-10 13:56:09 | INFO     | app.ml.loader:82 – ✓ Loaded [efficientnet] from EfficientNet_best.pth
+2026-04-10 13:56:09 | INFO     | app.ml.loader:98 – Models ready: ['mobilenet', 'resnet50', 'customcnn', 'vit', 'efficientnet'] (5/5) | device=cpu
+2026-04-10 13:56:09 | INFO     | app.main:58 – API ready  🩺
+2026-04-10 13:56:09 | INFO     | app.main:59 – ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-04-10 13:56:30 | INFO     | app.services.analyze_service:295 – scan_id=25 | consensus=Cowpox (88.3%) | risk=1 | models=['mobilenet', 'resnet50', 'customcnn', 'vit', 'efficientnet']

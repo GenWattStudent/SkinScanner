@@ -14,6 +14,7 @@ _MODEL_LABELS: dict[str, str] = {
     "resnet50": "ResNet-50",
     "customcnn": "Custom CNN (Baseline)",
     "vit": "Vision Transformer B/16",
+    'efficientnet': "EfficientNet-B0"
 }
 
 

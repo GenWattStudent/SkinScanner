@@ -36,6 +36,10 @@ class ModelLoader:
             m = tv_models.mobilenet_v3_large(weights=None)
             m.classifier[3] = nn.Linear(m.classifier[3].in_features, n)
 
+        elif model_type == 'efficientnet':
+            m = tv_models.efficientnet_b0(weights=None)
+            m.classifier[1] = nn.Linear(m.classifier[1].in_features, n)
+
         elif model_type == "customcnn":
             m = CustomCNN(num_classes=n, img_size=settings.img_size)
 
@@ -51,6 +55,7 @@ class ModelLoader:
     # ── Single model loading ─────────────────────────────────────────────────
 
     def load(self, model_type: str) -> nn.Module | None:
+        print(model_type)
         filename = MODEL_FILES.get(model_type)
         if not filename:
             logger.warning(f"No .pth mapping for model_type='{model_type}'")

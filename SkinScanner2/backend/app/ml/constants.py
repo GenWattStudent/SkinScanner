@@ -130,4 +130,5 @@ MODEL_FILES: dict[str, str] = {
     "resnet50": "ResNet50_best.pth",
     "customcnn": "CustomCNN_best.pth",
     "vit": "ViT_best.pth",
+    "efficientnet": "EfficientNet_best.pth"
 }
