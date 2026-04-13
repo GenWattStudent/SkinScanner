@@ -121,6 +121,7 @@ const pl: TranslationMap = {
   modelResnet50: 'ResNet-50',
   modelCustomcnn: 'Custom CNN',
   modelVit: 'Vision Transformer',
+  modelEfficientnet: 'EfficientNet-B0',
 
   // Info page
   infoTitle: 'O Aplikacji SkinScanner',
@@ -303,6 +304,7 @@ const en: TranslationMap = {
   modelResnet50: 'ResNet-50',
   modelCustomcnn: 'Custom CNN',
   modelVit: 'Vision Transformer',
+  modelEfficientnet: "EfficientNet-B0",
 
   // Info page
   infoTitle: 'About SkinScanner',

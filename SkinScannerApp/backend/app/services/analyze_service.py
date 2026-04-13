@@ -12,6 +12,7 @@ import uuid
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
+import time
 
 import cv2
 import numpy as np
@@ -35,6 +36,7 @@ MODEL_LABELS: dict[str, str] = {
     "resnet50": "ResNet-50",
     "customcnn": "Custom CNN",
     "vit": "Vision Transformer",
+    "efficientnet": "EfficientNet-B0"
 }
 
 
@@ -229,7 +231,9 @@ def run_analysis(
 
     for model_type, model in models.items():
         try:
+            start_time = time.time()
             top_probs, top_idx = processor.predict(model, tensor, top_k=3)
+            print(f"{model_type} finished in {round(time.time() - start_time, 4)}s")
             heatmap_arr = processor.generate_heatmap(model, tensor, image, model_type)
         except Exception as exc:
             logger.warning(f"Inference failed for [{model_type}]: {exc}")

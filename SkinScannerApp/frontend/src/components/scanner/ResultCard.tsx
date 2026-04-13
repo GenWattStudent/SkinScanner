@@ -51,6 +51,8 @@ function ModelCard({ mr, scanId, originalB64, idx }: { mr: ModelResult; scanId: 
   const desc = language === 'pl' ? primary.description_pl : primary.description_en
   const risk = primary.risk_level as 0 | 1 | 2
 
+  console.log(mr)
+
   return (
     <Card className={cn('border-l-4 transition-all', RISK_BORDER[risk], RISK_BG[risk])}>
       <CardContent className="p-0">
