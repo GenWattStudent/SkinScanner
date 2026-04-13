@@ -1,0 +1,197 @@
+iszemy pracę magisterską według Polskiego systemu szkolnictwa na Uniwersytecie Bielsko-Biała. 
+
+TEAMAT: SYSTEM DO ANALIZY ZDJĘĆ DERMATOLOGICZNYCH
+Z UŻYCIEM MODELI CNN I TRANSFORMERA
+
+Pisz ładnie poprawiaj błędy, staraj się nie zmieniać kontextu i pisz tak, żeby to nie było wykrywalne, że npisane przez AI. unikaj długich myślników i innych charakterystycznych znaków dla AI i stwierdzeń
+
+Do trenigu uzytko Skin Lesions Classification Dataset zbiór który ma 14 klas i około 19 tys zdjęć choroby zakzane notworowe itp.
+Ternowano na 2gpu na klaggle t4 twało około 9h
+
+wytrenowano custom cnn 
+Dotrenowano Resnet-50, effcientNet-B0, ViT_B_16_Weights , mobilenet_v3_large.
+
+ustawiono 25 epok
+
+# ==========================================
+# 5. URUCHOMIENIE PORÓWNANIA
+# ==========================================
+
+# Lista modeli
+models_list = ['CustomCNN', 'MobileNetV3', 'ResNet50', 'ViT', 'EfficientNet']
+results = {}
+
+# Parametry treningu
+NUM_EPOCHS = 25  
+PATIENCE = 5 
+
+criterion = nn.CrossEntropyLoss()
+
+for model_name in models_list:
+    print(f"\n{'='*40}")
+    print(f"TRENING MODELU: {model_name}")
+    print(f"{'='*40}")
+    
+    pretrained = (model_name != 'CustomCNN')
+    model = get_model(model_name, num_classes, pretrained=pretrained)
+    
+    # EfficientNet i ViT lubią nieco mniejszy learning rate
+    if model_name in ['ViT', 'EfficientNet']:
+        lr = 1e-4
+    else:
+        lr = 1e-3
+        
+    optimizer = optim.Adam(model.parameters(), lr=lr)
+    
+    trained_model, val_acc, train_loss, duration = train_model(
+        model, model_name, dataloaders, criterion, optimizer, 
+        num_epochs=NUM_EPOCHS, patience=PATIENCE
+    )
+    
+    results[model_name] = {
+        'model': trained_model,
+        'val_acc': val_acc,
+        'train_loss': train_loss,
+        'time': duration
+    }
+    
+    del model
+    torch.cuda.empty_cache()
+
+print("\nWSZYSTKIE 5 MODELI WYTRENOWANE!")
+
+
+mam confsion matrix wykrs jak się uczyl oraz jak długo, tabele z wynikami po uczeniu, jak sonbie radza jak an zdjęcia doda się jakies filtry 
+
+def add_noise(img):
+    # Dodaje szum Gaussowski
+    noise = torch.randn_like(img) * 0.1
+    return img + noise
+
+def add_blur(img):
+    # Dodaje rozmycie
+    blur = transforms.GaussianBlur(kernel_size=5, sigma=2.0)
+    return blur(img)
+
+# Przygotujmy specjalne DataLoadery z deformacjami
+robustness_transforms = {
+    'noise': transforms.Compose([
+        transforms.Resize((IMG_SIZE, IMG_SIZE)),
+        transforms.ToTensor(),
+        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
+        transforms.Lambda(add_noise)
+    ]),
+    'blur': transforms.Compose([
+        transforms.Resize((IMG_SIZE, IMG_SIZE)),
+        transforms.ToTensor(),
+        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
+        transforms.Lambda(add_blur)
+    ])
+}
+
+# Funkcja testująca
+def test_robustness(model, transform_name, transform):
+    # Tymczasowy dataset
+    temp_dataset = datasets.ImageFolder(os.path.join(DATA_DIR, 'test'), transform)
+    temp_loader = DataLoader(temp_dataset, batch_size=BATCH_SIZE, shuffle=False, num_workers=2)
+    
+    model.eval()
+    correct = 0
+    total = 0
+    
+    with torch.no_grad():
+        for inputs, labels in temp_loader:
+            inputs = inputs.to(device)
+            labels = labels.to(device)
+            outputs = model(inputs)
+            _, preds = torch.max(outputs, 1)
+            total += labels.size(0)
+            correct += (preds == labels).sum().item()
+            
+    return correct / total
+
+print("\n--- ROBUSTNESS TEST (Acc) ---")
+print(f"{'Model':<15} | {'Original':<10} | {'Noise':<10} | {'Blur':<10}")
+print("-" * 55)
+
+for name, data in results.items():
+    model = data['model']
+    # Oryginalny wynik (bez szumu)
+    orig_acc = data['val_acc'][-1] # Bierzemy ostatni z walidacji jako przybliżenie, lub policz na test
+    
+    # Test z szumem
+    noise_acc = test_robustness(model, 'noise', robustness_transforms['noise'])
+    
+    # Test z rozmyciem
+    blur_acc = test_robustness(model, 'blur', robustness_transforms['blur'])
+    
+    print(f"{name:<15} | {orig_acc:.4f}     | {noise_acc:.4f}     | {blur_acc:.4f}")
+
+
+Dodatkow mam apke gdzie user moze wybrac sobie zdjecie do analizy lub zrobić je, może tez połączyć telefon z kompen i zrobić zdj telefonem i przeznalziwoac. może roniez dodać gdzie zdjecie zostało zrobione na ciele na mapie ciałą zaznaczyć iż zpasiać. modele głosują daj prwadpobienstwo ora generują grad cam.
+
+
+Rozdział 3: Implementacja i ocena modeli CNN oraz Transformer w diagnostyce dermatologicznej
+3.1 Środowisko i narzędzia
+
+język: Python, biblioteki: PyTorch / TensorFlow, Keras
+sprzęt: GPU (np. NVIDIA), Google Colab lub lokalny serwer
+wersje bibliotek (numpy, OpenCV, scikit-learn itp.)
+
+3.2 Zbiór danych
+
+skąd pochodzi (np. ISIC Dataset, HAM10000)
+liczba obrazów, klasy chorób (np. melanoma, łuszczyca)
+podział na zbiór treningowy / walidacyjny / testowy (np. 70/15/15%)
+
+3.3 Przygotowanie danych (preprocessing)
+
+zmiana rozmiaru obrazów
+normalizacja pikseli
+augmentacja danych (obroty, odbicia, zmiany jasności)
+
+3.4 Implementacja modelu CNN
+
+architektura (np. ResNet50, EfficientNet)
+transfer learning – wykorzystanie wag z ImageNet
+warstwy klasyfikacyjne na końcu
+
+3.5 Implementacja modelu Transformer
+
+architektura (np. Vision Transformer – ViT, Swin Transformer)
+sposób tokenizacji obrazu (patch embedding)
+fine-tuning na zbiorze dermatologicznym
+
+3.6 Trening modeli
+
+funkcja straty (np. cross-entropy)
+optymalizator (Adam, SGD)
+liczba epok, learning rate, batch size
+
+3.7 Wyniki i porównanie modeli
+
+tabela z metrykami: dokładność, czułość, swoistość, AUC-ROC, F1-score
+macierz konfuzji dla obu modeli
+porównanie CNN vs Transformer – co działa lepiej i dlaczego
+
+3.8 Dyskusja wyników
+
+mocne i słabe strony każdego podejścia
+błędy klasyfikacji – jakie przypadki są trudne
+odniesienie do literatury z rozdziału 1
+
+
+4.1 Metodyka oceny modeli
+Krótkie wprowadzenie opisujące jakich metryk użyłeś i dlaczego. Tłumaczysz co oznacza dokładność, F1-score, macierz konfuzji w kontekście medycznym, czyli dlaczego np. czułość jest ważniejsza niż sama dokładność przy wykrywaniu czerniaka.
+4.2 Wyniki treningu i krzywe uczenia
+Wstawiasz wykresy jak modele się uczyły przez 25 epok. Opisujesz czy wystąpiło przeuczenie, kiedy zadziałał early stopping, które modele zbiegały szybciej.
+4.3 Porównanie skuteczności klasyfikacji
+Główna tabela z wynikami wszystkich pięciu modeli, dokładność, F1, czas treningu. Opisujesz który model wygrał i dlaczego Twoim zdaniem tak wyszło.
+4.4 Analiza macierzy konfuzji
+Dla każdego modelu pokazujesz macierz konfuzji i opisujesz które klasy były mylone najczęściej. Szczególnie interesujące będzie to przy klasach nielicznych jak Dermatofibroma z 191 zdjęciami.
+4.5 Test odporności na zakłócenia
+Tabela z wynikami testu szum/rozmycie dla każdego modelu. Opisujesz który model był najbardziej stabilny przy gorszej jakości zdjęć, co ma duże znaczenie praktyczne przy zdjęciach robionych telefonem.
+4.6 Analiza map Grad-CAM
+Przykładowe wizualizacje z kilku klas, pokazujesz czy model patrzył na właściwe miejsce na skórze. To bardzo ważna sekcja bo pokazuje interpretowalność systemu, co jest kluczowe w zastosowaniach medycznych.
+4.7 Dyskusja wyników
+Porównujesz CNN z Transformerem, odnosisz wyniki do literatury, wskazujesz ograniczenia systemu np. mały zbiór dla niektórych klas, piszesz co można by poprawić.
