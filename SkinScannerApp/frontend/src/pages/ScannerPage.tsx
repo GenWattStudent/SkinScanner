@@ -120,7 +120,7 @@ export default function ScannerPage() {
           </div>
 
           {/* Clear & Zoom toggle with hint */}
-          <div
+          {/* <div
             className={`flex items-center justify-between rounded-lg border px-4 py-2.5 transition-colors cursor-pointer select-none ${
               autoFocus
                 ? 'border-blue-500 bg-blue-50 dark:bg-blue-950/40'
@@ -129,24 +129,24 @@ export default function ScannerPage() {
             onClick={() => setAutoFocus((v) => !v)}
             role="button"
             aria-pressed={autoFocus}
-          >
-            <div className="flex items-center gap-2">
+          > */}
+            {/* <div className="flex items-center gap-2">
               <ScanSearch className={`h-5 w-5 ${autoFocus ? 'text-blue-500' : 'text-slate-400'}`} />
-              <div>
-                <p className={`text-sm font-medium ${autoFocus ? 'text-blue-600 dark:text-blue-400' : ''}`}>
+              <div> */}
+                {/* <p className={`text-sm font-medium ${autoFocus ? 'text-blue-600 dark:text-blue-400' : ''}`}>
                   {t('clearAndZoom')}
                 </p>
-                <p className="text-xs text-slate-500">{t('clearAndZoomHint')}</p>
-              </div>
-            </div>
-            <div className={`h-5 w-9 rounded-full transition-colors ${
+                <p className="text-xs text-slate-500">{t('clearAndZoomHint')}</p> */}
+              {/* </div>
+            </div> */}
+            {/* <div className={`h-5 w-9 rounded-full transition-colors ${
               autoFocus ? 'bg-blue-500' : 'bg-slate-300 dark:bg-slate-600'
             }`}>
               <div className={`mt-0.5 h-4 w-4 rounded-full bg-white shadow transition-transform ${
                 autoFocus ? 'translate-x-4.5 ml-0.5' : 'ml-0.5'
               }`} />
             </div>
-          </div>
+          </div> */}
 
           <div className="flex gap-2">
             <Button

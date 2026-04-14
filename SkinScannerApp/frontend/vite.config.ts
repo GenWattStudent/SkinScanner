@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
   const wsProxyTarget = apiProxyTarget.replace(/^http/, 'ws')
 
   return {
-    plugins: [react(), basicSsl()],
+    plugins: [react()],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),
@@ -19,6 +19,11 @@ export default defineConfig(({ mode }) => {
     server: {
       host: '0.0.0.0', // Listen on all network interfaces
       port: 5173,
+      allowedHosts: [
+        'localhost',
+        '.trycloudflare.com',           // pozwala na wszystkie subdomeny trycloudflare
+        // jeśli chcesz tylko konkretny adres, możesz wpisać go tutaj zamiast .trycloudflare.com
+      ],
       proxy: {
         '/api': {
           target: apiProxyTarget,

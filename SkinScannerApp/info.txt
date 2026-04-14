@@ -1,4 +1,4 @@
-iszemy pracę magisterską według Polskiego systemu szkolnictwa na Uniwersytecie Bielsko-Biała. 
+piszemy pracę magisterską według Polskiego systemu szkolnictwa na Uniwersytecie Bielsko-Biała. 
 
 TEAMAT: SYSTEM DO ANALIZY ZDJĘĆ DERMATOLOGICZNYCH
 Z UŻYCIEM MODELI CNN I TRANSFORMERA
