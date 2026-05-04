@@ -60,7 +60,7 @@ class ModelLoader:
         if not filename:
             logger.warning(f"No .pth mapping for model_type='{model_type}'")
             return None
-
+        print(self.models_dir)
         model_path = self.models_dir / filename
         if not model_path.exists():
             logger.warning(f"Weight file not found: {model_path}")
