@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
     },
     server: {
       https: true,
-      host: '0.0.0.0', // Listen on all network interfaces
+      host: '0.0.0.0',
       port: 5173,
       allowedHosts: true,
       proxy: {
