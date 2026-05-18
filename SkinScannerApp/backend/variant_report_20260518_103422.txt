@@ -1,0 +1,48 @@
+
+============================================================================
+WARIANT: Przednowotworowe
+Klasy: Actinic keratoses
+Najlepsza kombinacja: EfficientNet + ViT  (variant acc=78.41%, overall=89.60%)
+  #1  EfficientNet + ViT  variant=78.41%  overall=89.60%
+  #2  EfficientNet + ResNet50 + ViT  variant=78.41%  overall=89.36%
+  #3  EfficientNet + MobileNetV3 + ViT  variant=76.14%  overall=90.36%
+
+============================================================================
+WARIANT: Nowotworowe (rak skóry)
+Klasy: Basal cell carcinoma, Melanoma, Squamous cell carcinoma
+Najlepsza kombinacja: EfficientNet + MobileNetV3 + ViT  (variant acc=81.77%, overall=90.36%)
+  #1  EfficientNet + MobileNetV3 + ViT  variant=81.77%  overall=90.36%
+  #2  EfficientNet + MobileNetV3 + ResNet50 + ViT  variant=79.97%  overall=89.60%
+  #3  CustomCNN + EfficientNet + MobileNetV3 + ViT  variant=79.37%  overall=89.52%
+
+============================================================================
+WARIANT: Łagodne
+Klasy: Benign keratosis-like lesions, Dermatofibroma, Melanocytic nevi
+Najlepsza kombinacja: EfficientNet + MobileNetV3 + ViT  (variant acc=81.64%, overall=90.36%)
+  #1  EfficientNet + MobileNetV3 + ViT  variant=81.64%  overall=90.36%
+  #2  EfficientNet + ViT  variant=80.39%  overall=89.60%
+  #3  EfficientNet + MobileNetV3  variant=78.78%  overall=88.79%
+
+============================================================================
+WARIANT: Wirusowe
+Klasy: Chickenpox, Cowpox, HFMD, Measles, Monkeypox
+Najlepsza kombinacja: CustomCNN + EfficientNet + ResNet50 + ViT  (variant acc=99.70%, overall=88.43%)
+  #1  CustomCNN + EfficientNet + ResNet50 + ViT  variant=99.70%  overall=88.43%
+  #2  CustomCNN + EfficientNet + ViT  variant=99.66%  overall=88.95%
+  #3  EfficientNet + ViT  variant=99.61%  overall=89.60%
+
+============================================================================
+WARIANT: Zdrowe
+Klasy: Healthy
+Najlepsza kombinacja: EfficientNet + MobileNetV3 + ViT  (variant acc=100.00%, overall=90.36%)
+  #1  EfficientNet + MobileNetV3 + ViT  variant=100.00%  overall=90.36%
+  #2  EfficientNet + MobileNetV3 + ResNet50 + ViT  variant=100.00%  overall=89.60%
+  #3  CustomCNN + EfficientNet + MobileNetV3 + ViT  variant=100.00%  overall=89.52%
+
+============================================================================
+WARIANT: Naczyniowe / Łagodne
+Klasy: Vascular lesions
+Najlepsza kombinacja: EfficientNet + MobileNetV3  (variant acc=96.15%, overall=88.79%)
+  #1  EfficientNet + MobileNetV3  variant=96.15%  overall=88.79%
+  #2  EfficientNet  variant=96.15%  overall=87.59%
+  #3  CustomCNN + EfficientNet  variant=96.15%  overall=87.53%
