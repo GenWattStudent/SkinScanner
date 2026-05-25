@@ -1,0 +1,796 @@
+{
+  "generated_at": "2026-05-18T10:18:09.131990",
+  "device": "cpu",
+  "dataset_path": "..\\assets\\images\\test",
+  "dataset_size": 3674,
+  "num_classes": 14,
+  "classes": [
+    "Actinic keratoses",
+    "Basal cell carcinoma",
+    "Benign keratosis-like lesions",
+    "Chickenpox",
+    "Cowpox",
+    "Dermatofibroma",
+    "HFMD",
+    "Healthy",
+    "Measles",
+    "Melanocytic nevi",
+    "Melanoma",
+    "Monkeypox",
+    "Squamous cell carcinoma",
+    "Vascular lesions"
+  ],
+  "best_single_model": "EfficientNet",
+  "best_single_model_acc": 87.5885,
+  "best_ensemble_combo": [
+    "EfficientNet",
+    "MobileNetV3",
+    "ViT"
+  ],
+  "best_ensemble_acc": 90.3647,
+  "gain_vs_single": 2.7762,
+  "all_results": [
+    {
+      "combination": [
+        "EfficientNet",
+        "MobileNetV3",
+        "ViT"
+      ],
+      "n_models": 3,
+      "accuracy": 90.3647,
+      "per_class": {
+        "Actinic keratoses": 76.14,
+        "Basal cell carcinoma": 93.39,
+        "Benign keratosis-like lesions": 69.58,
+        "Chickenpox": 99.12,
+        "Cowpox": 97.98,
+        "Dermatofibroma": 80.0,
+        "HFMD": 100.0,
+        "Healthy": 100.0,
+        "Measles": 98.8,
+        "Melanocytic nevi": 95.34,
+        "Melanoma": 67.55,
+        "Monkeypox": 99.3,
+        "Squamous cell carcinoma": 84.38,
+        "Vascular lesions": 92.31
+      }
+    },
+    {
+      "combination": [
+        "EfficientNet",
+        "ViT"
+      ],
+      "n_models": 2,
+      "accuracy": 89.6026,
+      "per_class": {
+        "Actinic keratoses": 78.41,
+        "Basal cell carcinoma": 86.49,
+        "Benign keratosis-like lesions": 66.54,
+        "Chickenpox": 100.0,
+        "Cowpox": 98.99,
+        "Dermatofibroma": 80.0,
+        "HFMD": 100.0,
+        "Healthy": 98.83,
+        "Measles": 100.0,
+        "Melanocytic nevi": 94.64,
+        "Melanoma": 70.2,
+        "Monkeypox": 99.06,
+        "Squamous cell carcinoma": 81.25,
+        "Vascular lesions": 92.31
+      }
+    },
+    {
+      "combination": [
+        "EfficientNet",
+        "MobileNetV3",
+        "ResNet50",
+        "ViT"
+      ],
+      "n_models": 4,
+      "accuracy": 89.6026,
+      "per_class": {
+        "Actinic keratoses": 68.18,
+        "Basal cell carcinoma": 93.09,
+        "Benign keratosis-like lesions": 66.54,
+        "Chickenpox": 98.23,
+        "Cowpox": 97.98,
+        "Dermatofibroma": 72.0,
+        "HFMD": 99.59,
+        "Healthy": 100.0,
+        "Measles": 100.0,
+        "Melanocytic nevi": 95.96,
+        "Melanoma": 64.02,
+        "Monkeypox": 99.77,
+        "Squamous cell carcinoma": 82.81,
+        "Vascular lesions": 84.62
+      }
+    },
+    {
+      "combination": [
+        "CustomCNN",
+        "EfficientNet",
+        "MobileNetV3",
+        "ViT"
+      ],
+      "n_models": 4,
+      "accuracy": 89.521,
+      "per_class": {
+        "Actinic keratoses": 70.45,
+        "Basal cell carcinoma": 91.29,
+        "Benign keratosis-like lesions": 67.3,
+        "Chickenpox": 100.0,
+        "Cowpox": 97.98,
+        "Dermatofibroma": 72.0,
+        "HFMD": 100.0,
+        "Healthy": 100.0,
+        "Measles": 98.8,
+        "Melanocytic nevi": 95.73,
+        "Melanoma": 64.02,
+        "Monkeypox": 99.3,
+        "Squamous cell carcinoma": 82.81,
+        "Vascular lesions": 92.31
+      }
+    },
+    {
+      "combination": [
+        "EfficientNet",
+        "ResNet50",
+        "ViT"
+      ],
+      "n_models": 3,
+      "accuracy": 89.3576,
+      "per_class": {
+        "Actinic keratoses": 78.41,
+        "Basal cell carcinoma": 89.79,
+        "Benign keratosis-like lesions": 62.74,
+        "Chickenpox": 99.12,
+        "Cowpox": 98.99,
+        "Dermatofibroma": 72.0,
+        "HFMD": 100.0,
+        "Healthy": 99.42,
+        "Measles": 100.0,
+        "Melanocytic nevi": 95.42,
+        "Melanoma": 66.45,
+        "Monkeypox": 99.3,
+        "Squamous cell carcinoma": 81.25,
+        "Vascular lesions": 84.62
+      }
+    },
+    {
+      "combination": [
+        "CustomCNN",
+        "EfficientNet",
+        "ViT"
+      ],
+      "n_models": 3,
+      "accuracy": 88.9494,
+      "per_class": {
+        "Actinic keratoses": 73.86,
+        "Basal cell carcinoma": 87.69,
+        "Benign keratosis-like lesions": 60.46,
+        "Chickenpox": 100.0,
+        "Cowpox": 98.99,
+        "Dermatofibroma": 72.0,
+        "HFMD": 100.0,
+        "Healthy": 99.42,
+        "Measles": 100.0,
+        "Melanocytic nevi": 95.73,
+        "Melanoma": 65.78,
+        "Monkeypox": 99.3,
+        "Squamous cell carcinoma": 79.69,
+        "Vascular lesions": 88.46
+      }
+    },
+    {
+      "combination": [
+        "CustomCNN",
+        "EfficientNet",
+        "MobileNetV3",
+        "ResNet50",
+        "ViT"
+      ],
+      "n_models": 5,
+      "accuracy": 88.8677,
+      "per_class": {
+        "Actinic keratoses": 64.77,
+        "Basal cell carcinoma": 92.19,
+        "Benign keratosis-like lesions": 65.4,
+        "Chickenpox": 99.12,
+        "Cowpox": 97.98,
+        "Dermatofibroma": 64.0,
+        "HFMD": 100.0,
+        "Healthy": 100.0,
+        "Measles": 100.0,
+        "Melanocytic nevi": 96.27,
+        "Melanoma": 60.26,
+        "Monkeypox": 99.53,
+        "Squamous cell carcinoma": 78.12,
+        "Vascular lesions": 80.77
+      }
+    },
+    {
+      "combination": [
+        "EfficientNet",
+        "MobileNetV3"
+      ],
+      "n_models": 2,
+      "accuracy": 88.7861,
+      "per_class": {
+        "Actinic keratoses": 75.0,
+        "Basal cell carcinoma": 90.99,
+        "Benign keratosis-like lesions": 71.1,
+        "Chickenpox": 99.12,
+        "Cowpox": 97.98,
+        "Dermatofibroma": 72.0,
+        "HFMD": 99.17,
+        "Healthy": 100.0,
+        "Measles": 97.59,
+        "Melanocytic nevi": 93.25,
+        "Melanoma": 63.36,
+        "Monkeypox": 99.06,
+        "Squamous cell carcinoma": 81.25,
+        "Vascular lesions": 96.15
+      }
+    },
+    {
+      "combination": [
+        "MobileNetV3",
+        "ViT"
+      ],
+      "n_models": 2,
+      "accuracy": 88.65,
+      "per_class": {
+        "Actinic keratoses": 61.36,
+        "Basal cell carcinoma": 90.99,
+        "Benign keratosis-like lesions": 60.84,
+        "Chickenpox": 96.46,
+        "Cowpox": 97.98,
+        "Dermatofibroma": 76.0,
+        "HFMD": 100.0,
+        "Healthy": 100.0,
+        "Measles": 96.39,
+        "Melanocytic nevi": 95.65,
+        "Melanoma": 66.23,
+        "Monkeypox": 98.83,
+        "Squamous cell carcinoma": 71.88,
+        "Vascular lesions": 88.46
+      }
+    },
+    {
+      "combination": [
+        "CustomCNN",
+        "EfficientNet",
+        "ResNet50",
+        "ViT"
+      ],
+      "n_models": 4,
+      "accuracy": 88.4322,
+      "per_class": {
+        "Actinic keratoses": 70.45,
+        "Basal cell carcinoma": 89.79,
+        "Benign keratosis-like lesions": 58.94,
+        "Chickenpox": 100.0,
+        "Cowpox": 98.99,
+        "Dermatofibroma": 68.0,
+        "HFMD": 100.0,
+        "Healthy": 99.42,
+        "Measles": 100.0,
+        "Melanocytic nevi": 95.96,
+        "Melanoma": 61.81,
+        "Monkeypox": 99.53,
+        "Squamous cell carcinoma": 75.0,
+        "Vascular lesions": 84.62
+      }
+    },
+    {
+      "combination": [
+        "EfficientNet",
+        "MobileNetV3",
+        "ResNet50"
+      ],
+      "n_models": 3,
+      "accuracy": 88.2961,
+      "per_class": {
+        "Actinic keratoses": 65.91,
+        "Basal cell carcinoma": 93.99,
+        "Benign keratosis-like lesions": 66.54,
+        "Chickenpox": 97.35,
+        "Cowpox": 95.96,
+        "Dermatofibroma": 64.0,
+        "HFMD": 98.76,
+        "Healthy": 100.0,
+        "Measles": 97.59,
+        "Melanocytic nevi": 94.88,
+        "Melanoma": 58.94,
+        "Monkeypox": 99.77,
+        "Squamous cell carcinoma": 75.0,
+        "Vascular lesions": 92.31
+      }
+    },
+    {
+      "combination": [
+        "EfficientNet",
+        "ResNet50"
+      ],
+      "n_models": 2,
+      "accuracy": 88.0512,
+      "per_class": {
+        "Actinic keratoses": 75.0,
+        "Basal cell carcinoma": 90.09,
+        "Benign keratosis-like lesions": 64.64,
+        "Chickenpox": 100.0,
+        "Cowpox": 97.98,
+        "Dermatofibroma": 72.0,
+        "HFMD": 99.17,
+        "Healthy": 99.42,
+        "Measles": 100.0,
+        "Melanocytic nevi": 93.56,
+        "Melanoma": 60.71,
+        "Monkeypox": 99.06,
+        "Squamous cell carcinoma": 81.25,
+        "Vascular lesions": 92.31
+      }
+    },
+    {
+      "combination": [
+        "MobileNetV3",
+        "ResNet50",
+        "ViT"
+      ],
+      "n_models": 3,
+      "accuracy": 87.8879,
+      "per_class": {
+        "Actinic keratoses": 56.82,
+        "Basal cell carcinoma": 90.99,
+        "Benign keratosis-like lesions": 61.6,
+        "Chickenpox": 98.23,
+        "Cowpox": 96.97,
+        "Dermatofibroma": 68.0,
+        "HFMD": 98.76,
+        "Healthy": 100.0,
+        "Measles": 97.59,
+        "Melanocytic nevi": 96.27,
+        "Melanoma": 59.82,
+        "Monkeypox": 99.3,
+        "Squamous cell carcinoma": 68.75,
+        "Vascular lesions": 80.77
+      }
+    },
+    {
+      "combination": [
+        "CustomCNN",
+        "MobileNetV3",
+        "ViT"
+      ],
+      "n_models": 3,
+      "accuracy": 87.8606,
+      "per_class": {
+        "Actinic keratoses": 57.95,
+        "Basal cell carcinoma": 88.89,
+        "Benign keratosis-like lesions": 59.32,
+        "Chickenpox": 96.46,
+        "Cowpox": 94.95,
+        "Dermatofibroma": 64.0,
+        "HFMD": 100.0,
+        "Healthy": 100.0,
+        "Measles": 97.59,
+        "Melanocytic nevi": 96.89,
+        "Melanoma": 61.81,
+        "Monkeypox": 98.83,
+        "Squamous cell carcinoma": 65.62,
+        "Vascular lesions": 80.77
+      }
+    },
+    {
+      "combination": [
+        "CustomCNN",
+        "EfficientNet",
+        "MobileNetV3"
+      ],
+      "n_models": 3,
+      "accuracy": 87.8062,
+      "per_class": {
+        "Actinic keratoses": 68.18,
+        "Basal cell carcinoma": 91.29,
+        "Benign keratosis-like lesions": 66.16,
+        "Chickenpox": 98.23,
+        "Cowpox": 95.96,
+        "Dermatofibroma": 60.0,
+        "HFMD": 99.59,
+        "Healthy": 100.0,
+        "Measles": 98.8,
+        "Melanocytic nevi": 94.33,
+        "Melanoma": 57.62,
+        "Monkeypox": 99.53,
+        "Squamous cell carcinoma": 76.56,
+        "Vascular lesions": 92.31
+      }
+    },
+    {
+      "combination": [
+        "EfficientNet"
+      ],
+      "n_models": 1,
+      "accuracy": 87.5885,
+      "per_class": {
+        "Actinic keratoses": 76.14,
+        "Basal cell carcinoma": 83.78,
+        "Benign keratosis-like lesions": 67.68,
+        "Chickenpox": 100.0,
+        "Cowpox": 97.98,
+        "Dermatofibroma": 72.0,
+        "HFMD": 98.76,
+        "Healthy": 98.83,
+        "Measles": 100.0,
+        "Melanocytic nevi": 90.68,
+        "Melanoma": 68.43,
+        "Monkeypox": 98.83,
+        "Squamous cell carcinoma": 79.69,
+        "Vascular lesions": 96.15
+      }
+    },
+    {
+      "combination": [
+        "CustomCNN",
+        "EfficientNet"
+      ],
+      "n_models": 2,
+      "accuracy": 87.534,
+      "per_class": {
+        "Actinic keratoses": 73.86,
+        "Basal cell carcinoma": 85.29,
+        "Benign keratosis-like lesions": 63.12,
+        "Chickenpox": 100.0,
+        "Cowpox": 97.98,
+        "Dermatofibroma": 68.0,
+        "HFMD": 99.17,
+        "Healthy": 99.42,
+        "Measles": 100.0,
+        "Melanocytic nevi": 93.71,
+        "Melanoma": 60.93,
+        "Monkeypox": 99.06,
+        "Squamous cell carcinoma": 79.69,
+        "Vascular lesions": 96.15
+      }
+    },
+    {
+      "combination": [
+        "CustomCNN",
+        "EfficientNet",
+        "MobileNetV3",
+        "ResNet50"
+      ],
+      "n_models": 4,
+      "accuracy": 87.4796,
+      "per_class": {
+        "Actinic keratoses": 57.95,
+        "Basal cell carcinoma": 93.99,
+        "Benign keratosis-like lesions": 63.12,
+        "Chickenpox": 97.35,
+        "Cowpox": 95.96,
+        "Dermatofibroma": 56.0,
+        "HFMD": 98.76,
+        "Healthy": 100.0,
+        "Measles": 98.8,
+        "Melanocytic nevi": 95.73,
+        "Melanoma": 54.97,
+        "Monkeypox": 99.77,
+        "Squamous cell carcinoma": 67.19,
+        "Vascular lesions": 88.46
+      }
+    },
+    {
+      "combination": [
+        "CustomCNN",
+        "MobileNetV3",
+        "ResNet50",
+        "ViT"
+      ],
+      "n_models": 4,
+      "accuracy": 87.3163,
+      "per_class": {
+        "Actinic keratoses": 51.14,
+        "Basal cell carcinoma": 91.29,
+        "Benign keratosis-like lesions": 59.32,
+        "Chickenpox": 96.46,
+        "Cowpox": 96.97,
+        "Dermatofibroma": 52.0,
+        "HFMD": 98.76,
+        "Healthy": 100.0,
+        "Measles": 97.59,
+        "Melanocytic nevi": 96.82,
+        "Melanoma": 58.28,
+        "Monkeypox": 99.3,
+        "Squamous cell carcinoma": 60.94,
+        "Vascular lesions": 80.77
+      }
+    },
+    {
+      "combination": [
+        "ResNet50",
+        "ViT"
+      ],
+      "n_models": 2,
+      "accuracy": 87.1257,
+      "per_class": {
+        "Actinic keratoses": 52.27,
+        "Basal cell carcinoma": 87.69,
+        "Benign keratosis-like lesions": 52.85,
+        "Chickenpox": 96.46,
+        "Cowpox": 96.97,
+        "Dermatofibroma": 64.0,
+        "HFMD": 99.59,
+        "Healthy": 99.42,
+        "Measles": 98.8,
+        "Melanocytic nevi": 95.89,
+        "Melanoma": 63.13,
+        "Monkeypox": 99.06,
+        "Squamous cell carcinoma": 70.31,
+        "Vascular lesions": 84.62
+      }
+    },
+    {
+      "combination": [
+        "ViT"
+      ],
+      "n_models": 1,
+      "accuracy": 86.8536,
+      "per_class": {
+        "Actinic keratoses": 60.23,
+        "Basal cell carcinoma": 75.98,
+        "Benign keratosis-like lesions": 54.37,
+        "Chickenpox": 98.23,
+        "Cowpox": 97.98,
+        "Dermatofibroma": 72.0,
+        "HFMD": 100.0,
+        "Healthy": 97.66,
+        "Measles": 98.8,
+        "Melanocytic nevi": 94.72,
+        "Melanoma": 69.76,
+        "Monkeypox": 98.59,
+        "Squamous cell carcinoma": 73.44,
+        "Vascular lesions": 84.62
+      }
+    },
+    {
+      "combination": [
+        "CustomCNN",
+        "EfficientNet",
+        "ResNet50"
+      ],
+      "n_models": 3,
+      "accuracy": 86.3092,
+      "per_class": {
+        "Actinic keratoses": 61.36,
+        "Basal cell carcinoma": 90.39,
+        "Benign keratosis-like lesions": 56.27,
+        "Chickenpox": 99.12,
+        "Cowpox": 96.97,
+        "Dermatofibroma": 44.0,
+        "HFMD": 99.59,
+        "Healthy": 99.42,
+        "Measles": 98.8,
+        "Melanocytic nevi": 94.8,
+        "Melanoma": 55.19,
+        "Monkeypox": 99.06,
+        "Squamous cell carcinoma": 64.06,
+        "Vascular lesions": 84.62
+      }
+    },
+    {
+      "combination": [
+        "CustomCNN",
+        "ViT"
+      ],
+      "n_models": 2,
+      "accuracy": 86.2548,
+      "per_class": {
+        "Actinic keratoses": 52.27,
+        "Basal cell carcinoma": 79.58,
+        "Benign keratosis-like lesions": 49.81,
+        "Chickenpox": 98.23,
+        "Cowpox": 96.97,
+        "Dermatofibroma": 64.0,
+        "HFMD": 100.0,
+        "Healthy": 98.25,
+        "Measles": 98.8,
+        "Melanocytic nevi": 96.43,
+        "Melanoma": 63.13,
+        "Monkeypox": 98.59,
+        "Squamous cell carcinoma": 65.62,
+        "Vascular lesions": 84.62
+      }
+    },
+    {
+      "combination": [
+        "CustomCNN",
+        "ResNet50",
+        "ViT"
+      ],
+      "n_models": 3,
+      "accuracy": 85.6832,
+      "per_class": {
+        "Actinic keratoses": 46.59,
+        "Basal cell carcinoma": 86.79,
+        "Benign keratosis-like lesions": 47.15,
+        "Chickenpox": 97.35,
+        "Cowpox": 95.96,
+        "Dermatofibroma": 44.0,
+        "HFMD": 99.59,
+        "Healthy": 99.42,
+        "Measles": 97.59,
+        "Melanocytic nevi": 96.66,
+        "Melanoma": 57.62,
+        "Monkeypox": 99.3,
+        "Squamous cell carcinoma": 57.81,
+        "Vascular lesions": 76.92
+      }
+    },
+    {
+      "combination": [
+        "MobileNetV3",
+        "ResNet50"
+      ],
+      "n_models": 2,
+      "accuracy": 85.0844,
+      "per_class": {
+        "Actinic keratoses": 37.5,
+        "Basal cell carcinoma": 93.09,
+        "Benign keratosis-like lesions": 60.84,
+        "Chickenpox": 93.81,
+        "Cowpox": 95.96,
+        "Dermatofibroma": 44.0,
+        "HFMD": 98.76,
+        "Healthy": 99.42,
+        "Measles": 87.95,
+        "Melanocytic nevi": 94.49,
+        "Melanoma": 51.43,
+        "Monkeypox": 99.3,
+        "Squamous cell carcinoma": 54.69,
+        "Vascular lesions": 80.77
+      }
+    },
+    {
+      "combination": [
+        "MobileNetV3"
+      ],
+      "n_models": 1,
+      "accuracy": 84.3767,
+      "per_class": {
+        "Actinic keratoses": 46.59,
+        "Basal cell carcinoma": 90.09,
+        "Benign keratosis-like lesions": 66.54,
+        "Chickenpox": 92.92,
+        "Cowpox": 94.95,
+        "Dermatofibroma": 60.0,
+        "HFMD": 98.35,
+        "Healthy": 98.83,
+        "Measles": 85.54,
+        "Melanocytic nevi": 92.55,
+        "Melanoma": 51.88,
+        "Monkeypox": 96.48,
+        "Squamous cell carcinoma": 53.12,
+        "Vascular lesions": 76.92
+      }
+    },
+    {
+      "combination": [
+        "CustomCNN",
+        "MobileNetV3",
+        "ResNet50"
+      ],
+      "n_models": 3,
+      "accuracy": 84.0773,
+      "per_class": {
+        "Actinic keratoses": 31.82,
+        "Basal cell carcinoma": 91.29,
+        "Benign keratosis-like lesions": 55.89,
+        "Chickenpox": 92.92,
+        "Cowpox": 93.94,
+        "Dermatofibroma": 28.0,
+        "HFMD": 98.76,
+        "Healthy": 99.42,
+        "Measles": 90.36,
+        "Melanocytic nevi": 96.12,
+        "Melanoma": 46.8,
+        "Monkeypox": 99.3,
+        "Squamous cell carcinoma": 45.31,
+        "Vascular lesions": 73.08
+      }
+    },
+    {
+      "combination": [
+        "CustomCNN",
+        "MobileNetV3"
+      ],
+      "n_models": 2,
+      "accuracy": 83.9412,
+      "per_class": {
+        "Actinic keratoses": 35.23,
+        "Basal cell carcinoma": 90.39,
+        "Benign keratosis-like lesions": 59.7,
+        "Chickenpox": 92.92,
+        "Cowpox": 94.95,
+        "Dermatofibroma": 44.0,
+        "HFMD": 97.93,
+        "Healthy": 99.42,
+        "Measles": 85.54,
+        "Melanocytic nevi": 94.41,
+        "Melanoma": 49.23,
+        "Monkeypox": 98.12,
+        "Squamous cell carcinoma": 46.88,
+        "Vascular lesions": 76.92
+      }
+    },
+    {
+      "combination": [
+        "ResNet50"
+      ],
+      "n_models": 1,
+      "accuracy": 80.7295,
+      "per_class": {
+        "Actinic keratoses": 28.41,
+        "Basal cell carcinoma": 86.79,
+        "Benign keratosis-like lesions": 42.59,
+        "Chickenpox": 88.5,
+        "Cowpox": 92.93,
+        "Dermatofibroma": 28.0,
+        "HFMD": 96.28,
+        "Healthy": 95.91,
+        "Measles": 87.95,
+        "Melanocytic nevi": 93.32,
+        "Melanoma": 46.36,
+        "Monkeypox": 98.36,
+        "Squamous cell carcinoma": 37.5,
+        "Vascular lesions": 61.54
+      }
+    },
+    {
+      "combination": [
+        "CustomCNN",
+        "ResNet50"
+      ],
+      "n_models": 2,
+      "accuracy": 79.3685,
+      "per_class": {
+        "Actinic keratoses": 21.59,
+        "Basal cell carcinoma": 83.48,
+        "Benign keratosis-like lesions": 34.22,
+        "Chickenpox": 85.84,
+        "Cowpox": 91.92,
+        "Dermatofibroma": 16.0,
+        "HFMD": 97.52,
+        "Healthy": 97.08,
+        "Measles": 86.75,
+        "Melanocytic nevi": 94.95,
+        "Melanoma": 42.6,
+        "Monkeypox": 98.59,
+        "Squamous cell carcinoma": 20.31,
+        "Vascular lesions": 53.85
+      }
+    },
+    {
+      "combination": [
+        "CustomCNN"
+      ],
+      "n_models": 1,
+      "accuracy": 65.7322,
+      "per_class": {
+        "Actinic keratoses": 2.27,
+        "Basal cell carcinoma": 63.06,
+        "Benign keratosis-like lesions": 17.11,
+        "Chickenpox": 37.17,
+        "Cowpox": 55.56,
+        "Dermatofibroma": 0.0,
+        "HFMD": 81.4,
+        "Healthy": 68.42,
+        "Measles": 39.76,
+        "Melanocytic nevi": 92.62,
+        "Melanoma": 29.8,
+        "Monkeypox": 88.73,
+        "Squamous cell carcinoma": 0.0,
+        "Vascular lesions": 30.77
+      }
+    }
+  ]
+}
