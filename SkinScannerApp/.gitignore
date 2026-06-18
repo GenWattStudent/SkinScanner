@@ -33,7 +33,6 @@ dist/
 *.egg
 .eggs/
 *.h5
-*.pth
 *.onnx
 
 # =============================================
@@ -56,11 +55,6 @@ history.csv
 shared_buffer/
 backend/logs/
 backend/skinscanner.db
-
-models/*.h5
-models/*.pth
-models/*.onnx
-models/*.pb
 
 # =============================================
 # Edytory, systemy, tmp
